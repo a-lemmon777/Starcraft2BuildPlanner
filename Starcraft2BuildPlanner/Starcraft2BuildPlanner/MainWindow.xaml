@@ -5,7 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Starcraft2BuildPlanner"
         mc:Ignorable="d"
-        Title="Starcraft 2 Build Planner" Height="350" Width="525">
-    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="DarkBlue">
+        Title="Starcraft 2 Build Planner">
+    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="LightSlateGray">
+        <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            Author: Aaron Lemmon | 
+            <Hyperlink Foreground="#FF0066CC" RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/lemmo031/Starcraft2BuildPlanner">
+                Source Code
+            </Hyperlink></TextBlock>
     </Grid>
 </Window>

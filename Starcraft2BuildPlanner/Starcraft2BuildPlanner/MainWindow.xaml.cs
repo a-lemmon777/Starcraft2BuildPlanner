@@ -24,5 +24,10 @@ namespace Starcraft2BuildPlanner
         {
             MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
         }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
+        }
     }
 }
