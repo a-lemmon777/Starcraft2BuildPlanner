@@ -5,10 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Starcraft2BuildPlanner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72">
-            Hello, WPF!
-        </TextBlock>
+        Title="Starcraft 2 Build Planner" Height="350" Width="525">
+    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="DarkBlue">
     </Grid>
 </Window>
