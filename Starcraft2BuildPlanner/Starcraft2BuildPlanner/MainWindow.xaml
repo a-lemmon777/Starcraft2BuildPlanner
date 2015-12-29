@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="Starcraft 2 Build Planner">
     <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="LightSlateGray">
+        <WrapPanel>
+            <Button>Test button 1</Button>
+            <Button>Test button 2</Button>
+            <Button>Test button 3</Button>
+            <Button>Test button 4</Button>
+            <Button>Test button 5</Button>
+            <Button>Test button 6</Button>
+        </WrapPanel>
         <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Bottom">
             Author: Aaron Lemmon | 
             <Hyperlink Foreground="#FF0066CC" RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/lemmo031/Starcraft2BuildPlanner">
