@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Starcraft2BuildPlanner"
         mc:Ignorable="d"
-        Title="Starcraft 2 Build Planner">
+        Title="Starcraft 2 Build Planner" d:DesignWidth="1319.114" d:DesignHeight="742.877">
     <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="LightSlateGray">
         <WrapPanel>
             <Button>Test button 1</Button>
@@ -14,6 +14,15 @@
             <Button>Test button 4</Button>
             <Button>Test button 5</Button>
             <Button>Test button 6</Button>
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Right" MaxWidth="288">
+            <Button Height="48" Width="48">Icon 1</Button>
+            <Button Height="48" Width="48">Icon 2</Button>
+            <Button Height="48" Width="48">Icon 3</Button>
+            <Button Height="48" Width="48">Icon 4</Button>
+            <Button Height="48" Width="48">Icon 5</Button>
+            <Button Height="48" Width="48">Icon 6</Button>
+            <Button Height="48" Width="48">Icon 7</Button>
         </WrapPanel>
         <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Bottom">
             Author: Aaron Lemmon | 
