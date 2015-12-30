@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Starcraft2BuildPlanner"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="Brush" Color="Blue"/>
     </Application.Resources>
 </Application>
