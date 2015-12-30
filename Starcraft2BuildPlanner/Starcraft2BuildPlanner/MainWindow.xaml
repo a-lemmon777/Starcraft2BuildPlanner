@@ -6,10 +6,14 @@
         xmlns:local="clr-namespace:Starcraft2BuildPlanner"
         mc:Ignorable="d"
         Title="Starcraft 2 Build Planner" d:DesignWidth="1319.114" d:DesignHeight="742.877" Icon="Images/icon-mineral-nobg.png">
-    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp"  Background="LightSlateGray">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/ui_battlenet_glues_topnav_hexpattern.png" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,26,30">
+        </ImageBrush>
+    </Window.Background>
+    <Grid Name="pnlMainGrid" MouseUp="pnlMainGrid_MouseUp">
         <TextBox VerticalAlignment="Center" Background="{StaticResource Brush}"></TextBox>
         <Image x:Name="image" HorizontalAlignment="Left" Margin="192,107,0,0" VerticalAlignment="Top" Source="/Starcraft2BuildPlanner;component/Images/btn-unit-terran-scv.png" Stretch="None"/>
-        <WrapPanel>
+        <WrapPanel HorizontalAlignment="Center">
             <Button>Test button 1</Button>
             <Button>Test button 2</Button>
             <Button>Test button 3</Button>
@@ -26,7 +30,7 @@
             <Button Height="48" Width="48">Icon 6</Button>
             <Button Height="48" Width="48">Icon 7</Button>
         </WrapPanel>
-        <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+        <TextBlock Margin="10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="BlueViolet" Background="Black">
             Author: Aaron Lemmon | 
             <Hyperlink Foreground="#FF0066CC" RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/lemmo031/Starcraft2BuildPlanner">
                 Source Code
