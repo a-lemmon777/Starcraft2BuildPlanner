@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Starcraft 2 Build Planner" d:DesignWidth="1319.114" d:DesignHeight="742.877" Icon="Images/icon-mineral-nobg.png">
     <Window.Resources>
-        <ImageBrush x:Key="TerranButtonFrameNormalBrush" ImageSource="Images/ui_commandcard_terranframe_normal.png" Stretch="UniformToFill"/>
+
     </Window.Resources>
     <Window.Background>
         <ImageBrush ImageSource="Images/ui_battlenet_glues_topnav_hexpattern.png" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,26,30">
@@ -17,6 +17,7 @@
         <TextBox VerticalAlignment="Center" Background="{StaticResource Brush}"></TextBox>
         <Image x:Name="image" HorizontalAlignment="Left" Margin="192,107,0,0" VerticalAlignment="Top" Source="Images/btn-unit-terran-scv.png" Stretch="None"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Margin="391,159,0,0" VerticalAlignment="Top" Source="Images/ui_commandcard_terranframe_normal.png" Stretch="None"/>
+        <Image x:Name="image3" HorizontalAlignment="Left" Margin="472,159,0,0" VerticalAlignment="Top" Source="Images/ui_ingame_help_glossary_terran_normaloverandpressedover1.png" Stretch="None"/>
         <WrapPanel HorizontalAlignment="Center">
             <Button>Test button 1</Button>
             <Button>Test button 2</Button>
@@ -26,10 +27,16 @@
             <Button>Test button 6</Button>
         </WrapPanel>
         <WrapPanel HorizontalAlignment="Right" MaxWidth="288">
-            <Button Height="48" Width="48" Background="{StaticResource TerranButtonFrameNormalBrush}">Icon 1</Button>
-            <Button Height="48" Width="48">Icon 2</Button>
-            <Button Height="48" Width="48">Icon 3</Button>
-            <Button Height="48" Width="48">Icon 4</Button>
+            <Button Height="48" Width="48" BorderBrush="{x:Null}" Background="{StaticResource TerranButtonFrameNormalBrush}">Icon 1
+            </Button>
+            <Button Height="48" Width="48" Content="{StaticResource TerranButtonFrameHoverImage}"></Button>
+            <Button Height="48" Width="48">
+                <Grid>
+                    <Image Source="Images/ui_commandcard_terranframe_normal.png" Stretch="UniformToFill" Visibility="Visible"/>
+                    <Image Source="Images/ui_ingame_help_glossary_terran_normaloverandpressedover1.png" Stretch="UniformToFill" Visibility="Hidden"/>
+                </Grid>
+            </Button>
+            <Button Height="48" Width="48" BorderBrush="{x:Null}" Background="{StaticResource TerranButtonFrameNormalBrush}" Content="{StaticResource btn-unit-terran-scv}"/>
             <Button Height="48" Width="48">Icon 5</Button>
             <Button Height="48" Width="48">Icon 6</Button>
             <Button Height="48" Width="48">Icon 7</Button>
