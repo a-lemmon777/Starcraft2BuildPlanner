@@ -4,9 +4,13 @@
              xmlns:local="clr-namespace:Starcraft2BuildPlanner"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="Brush" Color="Blue"/>
-        <ImageBrush x:Key="TerranButtonFrameNormalBrush" ImageSource="Images/ui_commandcard_terranframe_normal.png" Stretch="UniformToFill"/>
-        <Image x:Key="TerranButtonFrameHoverImage" Source="Images/ui_ingame_help_glossary_terran_normaloverandpressedover1.png" Stretch="UniformToFill"/>
-        <Image x:Key="btn-unit-terran-scv" Source="Images/btn-unit-terran-scv.png"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaries/ImageDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="Button">
+                <Setter Property="Foreground" Value="Blue"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
