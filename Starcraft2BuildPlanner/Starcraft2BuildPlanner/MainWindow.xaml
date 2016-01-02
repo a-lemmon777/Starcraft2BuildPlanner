@@ -25,7 +25,7 @@
             <WrapPanel.Resources>
                 <Style TargetType="Button">
                     <!--<Setter Property="OverridesDefaultStyle" Value="True"/>-->
-                    <Setter Property="Background" Value="{StaticResource TerranButtonFrameNormalBrush}"/>
+                    <!--<Setter Property="Background" Value="{StaticResource TerranButtonFrameNormalBrush}"/>-->
                     <Setter Property="BorderBrush" Value="{x:Null}"/>
                     <Setter Property="Height" Value="48"/>
                     <Setter Property="Width" Value="48"/>
@@ -36,10 +36,15 @@
                         </Trigger>
                     </Style.Triggers>
                 </Style>
+                <Style BasedOn="{StaticResource {x:Type Button}}"
+                       TargetType="Button"
+                       x:Key="TerranButton">
+                    <Setter Property="Background" Value="{StaticResource TerranButtonFrameNormalBrush}"/>
+                </Style>
             </WrapPanel.Resources>
-            <Button/>
-            <Button/>
-            <Button/>
+            <Button Style="{StaticResource TerranButton}"/>
+            <Button Style="{StaticResource TerranButton}"/>
+            <Button Style="{StaticResource TerranButton}"/>
             <Button Content="{StaticResource TerranButtonFrameHoverImage}"></Button>
             <Button>
                 <Grid>

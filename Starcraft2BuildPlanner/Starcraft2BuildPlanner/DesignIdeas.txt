@@ -1,0 +1,84 @@
+﻿___General___
+Basically, (at least underlying) always give commands to specific units/structures
+Set workers to transfer after minerals saturated?
+Be able to do multicommands? (Select 6 workers and transfer them)
+Possibly, have command card in bottom right all the time, what it shows depends on what is selected
+Most practical uses of multiselect:
+    worker transfer
+    assigning workers to gas
+    maybe building multiple depots
+    morphing multiple larva
+    creating units, like warp in from the first open warpgate
+Have a small overlay icon that says the state of a producer (busy, available?, being chronoed, spawning larva, lifted off)
+Be able to repeatedly call mules/inject larva automatically?
+Have different panels for workers/structures/military
+or, have different panels for each base (holds townhalls, workers, )
+Be able to condense worker icons together, effectively stacking them?
+When building townhall/gasHarvestBuildings, need to say which base they should go in (allows for macro hatches)
+    Need a way to force only 2 vespene per base
+Perhaps the default should be "standard" resource locations, with the possibility to create custom resource locations (3 gas or something)
+    user can create resource locations as needed as the sim progresses
+Should have a die option for every unit (and building for factory scout?) to free up supply
+Should have a cancel option (or at least support for extractor trick)
+Be able to have travel time? Useful for:
+    transferring workers
+    traveling to new base to build
+    traveling within a base to build
+
+
+
+
+Program could have 2 modes: precision and easy: (More trouble than it's worth?)
+    Easy mode:
+        Don't need to specify which building builds what
+
+
+Be able to create control groups?
+Pipedream: be able to support archon mode/coop
+
+
+Possible Gantt features:
+    Rolling tasks together into a wrapper task
+    Start-to-start dependencies
+    Finish-to-start dependencies
+    Finish-to-finish dependencies
+    Start-to-finish dependencies?
+    Leads and lags?
+    Need maximal-type relationships? (B can start after A, but with the delay of no more than X)
+    "right now line"
+
+___Terrans___
+Matters where scvs are built
+Matters where mules called (user can set a default?)
+How to handle tech labs/reactors and liftoff?
+    On right panel, possibly have rax/factory/starport connected to the addon with some pipes? (messes with wrapping?)
+    or, just have an indicator on the building specifying if it's attached to a techlab or reactor
+        this might not be great, the techlabs need to be available for researching
+        it may be possible to do this if the "stacking" idea is used
+    If want to move addons: lift off, then pick land and select addon (all else grayed out?)
+    or, multiselect a building and addon then click join or something
+scvs are occupied when building 
+Support repairing from mules/scvs?
+
+
+
+
+___Zerg___
+Need to have overlord, zergling, roach, hydra, and corruptor available for morphing
+Need to have larva available, where do they show up? Next to hatch where they are? Or accessed through hatch menu?
+    I don't really like accessing through hatch menu, seems less good.
+Show when larva production is blocked?
+Handle morphing of structures to structures and workers to structures
+
+
+
+
+
+
+___Protoss___
+High/Dark Templar must be able to merge for archons
+    look at command card of one, select archon, then click on another templar (all else grayed out?)?
+    or, multiselect 2 templar and look at command card of one, select archon
+Handle chrono, which is odd because it isn't a task, so it should be done at the earliest possible time
+    Possibly set it after a given thing starts or finished (gantt connection)
+Should chrono be shown on the chart somehow, showing what chrono was affecting?
