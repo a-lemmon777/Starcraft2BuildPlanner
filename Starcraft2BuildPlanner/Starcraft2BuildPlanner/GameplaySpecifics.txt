@@ -32,31 +32,31 @@ Supply Depot
     Lower (if raised)
     Raise (if lowered)
 Barracks
-    Train Marine (No Req)
-    Train Reaper (No Req)
+    Train Marine (No Reqs)
+    Train Reaper (No Reqs)
     Train Marauder (Req: Attached Tech Lab)
     Train Ghost (Req: Attached Tech Lab, Ghost Academy)
     Set Rally Point
-    Build Tech Lab (only with nothing attached) (No Req)
-    Build Reactor (only with nothing attached) (No Req)
+    Build Tech Lab (only with nothing attached) (No Reqs)
+    Build Reactor (only with nothing attached) (No Reqs)
     Lift Off/Land
 Tech Lab (attached to Barracks)
-    Research Combat Shield (No Req)
-    Research Stimpack (No Req)
-    Research Concussive Shells (No Req)
+    Research Combat Shield (No Reqs)
+    Research Stimpack (No Reqs)
+    Research Concussive Shells (No Reqs)
 Tech Lab (not attached) (nothing)
 Reactor (nothing, no matter what it's attached to)
 Engineering Bay
-    Upgrade Infantry Weapons Level 1 (No Req)
+    Upgrade Infantry Weapons Level 1 (No Reqs)
     Upgrade Infantry Weapons Level 2 (Req: Level 1 and Armory)
     Upgrade Infantry Weapons Level 3 (Req: Level 2 and Armory)
-    Upgrade Infantry Armor Level 1 (No Req)
+    Upgrade Infantry Armor Level 1 (No Reqs)
     Upgrade Infantry Armor Level 2 (Req: Level 1 and Armory)
     Upgrade Infantry Armor Level 3 (Req: Level 2 and Armory)
-    Research Hi-Sec Auto Tracking (No Req)
-    Research Neosteel Frame (2 extra spots in bunker, 5 extra spots in Command Center and Planetary Fortress) (No Req)
-    Upgrade Structure Armor (No Req)
-Bunker (empty)`9
+    Research Hi-Sec Auto Tracking (No Reqs)
+    Research Neosteel Frame (2 extra spots in bunker, 5 extra spots in Command Center and Planetary Fortress) (No Reqs)
+    Upgrade Structure Armor (No Reqs)
+Bunker (empty)
     Set Bunker Rally Point
     Load
     Salvage
@@ -69,54 +69,54 @@ Bunker (with units inside)
 Missile Turret (nothing)
 Sensor Tower (nothing)
 Ghost Academy
-    Research Personal Cloaking (No Req)
+    Research Personal Cloaking (No Reqs)
     Arm Silo with Nuke (Req: Factory, No Nuke in this Ghost Academy)
 Factory
-    Build Hellion (No Req)
-    Build Widow Mine (No Req)
+    Build Hellion (No Reqs)
+    Build Widow Mine (No Reqs)
     Build Siege Tank (Req: Attached Tech Lab)
     Build Cyclone (Req: Attached Tech Lab)
     Build Hellbat (Req: Armory)
     Build Thor (Req: Attached Tech Lab, Armory)
-    Build Tech Lab (only with nothing attached) (No Req)
-    Build Reactor (only with nothing attached) (No Req)
+    Build Tech Lab (only with nothing attached) (No Reqs)
+    Build Reactor (only with nothing attached) (No Reqs)
     Set Rally Point
     Lift Off/Land
 Tech Lab (attached to Factory)
-    Research Infernal Pre-Igniter (No Req)
+    Research Infernal Pre-Igniter (No Reqs)
     Research Drilling Claws (Req: Armory)
-    Research Mag-Field Accelerator (No Req)
+    Research Mag-Field Accelerator (No Reqs)
 Armory
-    Upgrade Vehicle Weapons Level 1 (No Req)
+    Upgrade Vehicle Weapons Level 1 (No Reqs)
     Upgrade Vehicle Weapons Level 2 (Req: Level 1)
     Upgrade Vehicle Weapons Level 3 (Req: Level 2)
-    Upgrade Vehicle and Ship Plating Level 1 (No Req)
+    Upgrade Vehicle and Ship Plating Level 1 (No Reqs)
     Upgrade Vehicle and Ship Plating Level 2 (Req: Level 1)
     Upgrade Vehicle and Ship Plating Level 3 (Req: Level 2)
-    Upgrade Ship Weapons Level 1 (No Req)
+    Upgrade Ship Weapons Level 1 (No Reqs)
     Upgrade Ship Weapons Level 2 (Req: Level 1)
     Upgrade Ship Weapons Level 3 (Req: Level 2)
 Starport
-    Build Viking (No Req)
-    Build Medivac (No Req)
-    Build Liberator (No Req)
+    Build Viking (No Reqs)
+    Build Medivac (No Reqs)
+    Build Liberator (No Reqs)
     Build Raven (Req: Attached Tech Lab)
     Build Banshee (Req: Attached Tech Lab)
     Build Battlecruiser (Req: Attached Tech Lab, Fusion Core)
     Set Rally Point
-    Build Tech Lab (only with nothing attached) (No Req)
-    Build Reactor (only with nothing attached) (No Req)
+    Build Tech Lab (only with nothing attached) (No Reqs)
+    Build Reactor (only with nothing attached) (No Reqs)
     Liftoff/Land
 Tech Lab (attached to Starport)
-    Research High Capacity Fuel Tanks (No Req)
-    Research Explosive Shrapnel Shells (No Req)
-    Research Corvid Reactor (No Req)
-    Research Cloaking Field (No Req)
-    Research Hyperflight Rotors (No Req)
-    Research Advanced Ballistics (No Req)
+    Research High Capacity Fuel Tanks (No Reqs)
+    Research Explosive Shrapnel Shells (No Reqs)
+    Research Corvid Reactor (No Reqs)
+    Research Cloaking Field (No Reqs)
+    Research Hyperflight Rotors (No Reqs)
+    Research Advanced Ballistics (No Reqs)
 Fusion Core
-    Research Weapon Refit (No Req)
-    Research Behemoth Reactor (No Req)
+    Research Weapon Refit (No Reqs)
+    Research Behemoth Reactor (No Reqs)
 
 SCV
     Gather (Harvesting Minerals or Vespene)
@@ -144,14 +144,14 @@ MULE
 Marine
     Use Stimpack (Req: Research)
 Reaper
-    KD8 Charge (HELP!!!!!!!!!!!)
+    KD8 Charge (No Reqs)
 Marauder
     Use Stimpack (Req: Research)
 Ghost
     Tac Nuke Strike (Req: Nuke at Ghost Academy)
     Hold Fire/Weapons Free
-    Steady Targeting (HELP!!!!!!!!!!!)
-    EMP Round (HELP!!!!!!!!!!!)
+    Steady Targeting (No Reqs)
+    EMP Round (No Reqs)
     Cloak/Decloak (Req: Research, drains energy)
 Hellion/Hellbat
     Hellbat Mode/Hellion Mode (Req: Armory both ways)
@@ -172,16 +172,16 @@ Medivac
 Liberator
     Figher Mode/Defender Mode
 Raven
-    Build Auto-Turret (HELP!!!!!!!!!!!)
-    Build Point Defense Drone (HELP!!!!!!!!!!!)
-    Seeker Missile (HELP!!!!!!!!!!!)
+    Build Auto-Turret (No Reqs)
+    Build Point Defense Drone (No Reqs)
+    Seeker Missile (No Reqs)
 Auto-Turret (nothing)
 Point Defense Drone (nothing)
 Banshee
     Cloak/Decloak (Req: Research)
 Battlecruiser
     Yamato Cannon (Req: Research)
-    Tactical Jump (HELP!!!!!!!!!!!)
+    Tactical Jump (No Reqs)
 
 ___Zerg___
 General Notes
@@ -194,7 +194,7 @@ Hatchery (spawns with 1 larva)
     Set Worker Rally Point
     Set Rally Point
     Mutate into Lair (Req: Spawning Pool)
-Extractor (nothing, no Reqs)
+Extractor (nothing, No Reqs)
 Spawning Pool
     Evolve Metabolic Boost (No Reqs)
     Evolve Adrenal Glands (Req: Hive)
@@ -229,8 +229,8 @@ Ultralisk Cavern
 Greater Spire
 
 Larva
-    Morph to Drone (no Reqs)
-    Morph to Overlord (no Reqs)
+    Morph to Drone (No Reqs)
+    Morph to Overlord (No Reqs)
     Morph to Zergling (Req: Spawning Pool)
     Morph to Roach (Req: Roach Warren)
     Morph to Hydralisk (Req: Hydralisk Den)
