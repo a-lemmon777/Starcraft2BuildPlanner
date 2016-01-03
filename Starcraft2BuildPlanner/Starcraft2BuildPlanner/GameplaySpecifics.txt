@@ -1,0 +1,182 @@
+﻿___Terran___
+General Notes
+    Can halt production of buildings to free the SCV (this could be used to block areas)
+Command Center
+    Train SCV
+    Upgrade to Orbital Command (Req: Barracks)
+    Upgrade to Planetary Fortress (Req: Engineering Bay)
+    Load (up to 5 SCVs) (SCVs live if CC is destroyed)
+    Unload All (if it has at least one scv inside)
+    Set Rally Point
+    Lift Off
+Command Center (lifted off)
+    Load (up to 5 SCVs)
+    Land
+    Unload All (if it has at least one scv inside)
+Orbital Command
+    Train SCV
+    Set Rally Point
+    Calldown: MULE
+    Calldown: Extra Supplies (need an existing supply depot that doesn't already have additional supplies)
+    Scanner Sweep
+    Lift Off
+Orbital Command (lifted off)
+    Land
+Planetary Fortress
+    Train SCV
+    Set Rally Point
+    Load (up to 5 SCVs)
+    Unload All (if it has at least one scv inside)
+Refinery (nothing)
+Supply Depot
+    Lower (if raised)
+    Raise (if lowered)
+Barracks
+    Train Marine
+    Train Reaper
+    Train Marauder (Req: Attached Tech Lab)
+    Train Ghost (Req: Attached Tech Lab, Ghost Academy)
+    Set Rally Point
+    Build Tech Lab (only with nothing attached)
+    Build Reactor (only with nothing attached)
+    Lift Off/Land
+Tech Lab (attached to Barracks)
+    Research Combat Shield
+    Research Stimpack
+    Research Concussive Shells
+Tech Lab (not attached) (nothing)
+Reactor (nothing, no matter what it's attached to)
+Engineering Bay
+    Upgrade Infantry Weapons Level 1 (then 2, then 3)
+    Upgrade Infantry Weapons Level 2 (Req: Level 1 and Armory)
+    Upgrade Infantry Weapons Level 3 (Req: Level 2 and Armory)
+    Upgrade Infantry Armor Level 1 (then 2, then 3)
+    Upgrade Infantry Armor Level 2 (Req: Level 1 and Armory)
+    Upgrade Infantry Armor Level 3 (Req: Level 2 and Armory)
+    Research Hi-Sec Auto Tracking
+    Research Neosteel Frame (2 extra spots in bunker, 5 extra spots in Command Center and Planetary Fortress)
+    Upgrade Structure Armor
+Bunker (empty)
+    Set Bunker Rally Point
+    Load
+    Salvage
+Bunker (with units inside)
+    Set Bunker Rally Point
+    Use Stimpack (with a Marine or Marauder inside, grayed out if stim isn't researched yet)
+    Load
+    Unload All
+    Salvage
+Missile Turret (nothing)
+Sensor Tower (nothing)
+Ghost Academy
+    Research Personal Cloaking
+    Arm Silo with Nuke
+Factory
+    Build Hellion
+    Build Widow Mine
+    Build Siege Tank (Req: Attached Tech Lab)
+    Build Cyclone (Req: Attached Tech Lab)
+    Build Hellbat (Req: Armory)
+    Build Thor (Req: Attached Tech Lab, Armory)
+    Build Tech Lab (only with nothing attached)
+    Build Reactor (only with nothing attached)
+    Set Rally Point
+    Lift Off/Land
+Tech Lab (attached to Factory)
+    Research Infernal Pre-Igniter
+    Research Drilling Claws (Req: Armory)
+    Research Mag-Field Accelerator
+Armory
+    Upgrade Vehicle Weapons Level 1 (then 2, then 3)
+    Upgrade Vehicle and Ship Plating Level 1 (then 2, then 3)
+    Upgrade Ship Weapons Level 1 (then 2, then 3)
+Starport
+    Build Viking
+    Build Medivac
+    Build Liberator
+    Build Raven (Req: Attached Tech Lab)
+    Build Banshee (Req: Attached Tech Lab)
+    Build Battlecruiser (Req: Attached Tech Lab, Fusion Core)
+    Set Rally Point
+    Build Tech Lab (only with nothing attached)
+    Build Reactor (only with nothing attached)
+    Liftoff/Land
+Tech Lab (attached to Starport)
+    Research High Capacity Fuel Tanks
+    Research Explosive Shrapnel Shells
+    Research Corvid Reactor
+    Research Cloaking Field
+    Research Hyperflight Rotors (Req: Fusion Core)
+    Research Advanced Ballistics (Req: Fusion Core)
+Fusion Core
+    Research Weapon Refit
+    Research Behemoth Reactor
+
+SCV
+    Gather (Harvesting Minerals or Vespene)
+    Return Cargo (if it has cargo)
+    Build Structure
+        Build Command Center
+        Build Refinery
+        Build Supply Depot
+        Build Barracks (Req: Supply Depot)
+        Build Engineering Bay (Req: Command Center)
+        Build Bunker (Req: Barracks)
+        Build Missile Turret (Req: Engineering Bay)
+        Build Sensor Tower (Req: Engineering Bay)
+    Build Advanced Structure
+        Build Ghost Academy (Req: Barracks)
+        Build Factory (Req: Barracks)
+        Build Armory (Req: Factory)
+        Build Starport (Req: Factory)
+        Build Fusion Core (Req: Starport)
+    Repair
+MULE
+    Gather
+    Return Cargo (if it has cargo)
+    Repair
+Marine
+    Use Stimpack (Req: Research)
+Reaper
+    KD8 Charge
+Marauder
+    Use Stimpack (Req: Research)
+Ghost
+    Tac Nuke Strike (Req: Nuke at Ghost Academy)
+    Hold Fire/Weapons Free
+    Steady Targeting
+    EMP Round
+    Cloak/Decloak (Req: Research, drains energy)
+Hellion/Hellbat
+    Hellbat Mode/Hellion Mode (Req: Armory both ways)
+Widow Mine
+    Activate Mine/Deactivate Mine
+Siege Tank
+    Siege Mode/Tank Mode
+Cyclone
+    Lock On
+Thor (nothing)
+Viking
+    Assault Mode/Fighter Mode
+Medivac
+    Heal
+    Ignite Afterburners
+    Load
+    Unload All
+Liberator
+    Figher Mode/Defender Mode
+Raven
+    Build Auto-Turret
+    Build Point Defense Drone
+    Seeker Missile
+Auto-Turret (nothing)
+Point Defense Drone (nothing)
+Banshee
+    Cloak/Decloak (Req: Research)
+Battlecruiser
+    Yamato Cannon (Req: Research)
+    Tactical Jump
+
+___Zerg___
+
+___Protoss___

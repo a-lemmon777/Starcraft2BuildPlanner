@@ -24,8 +24,30 @@ Be able to have travel time? Useful for:
     transferring workers
     traveling to new base to build
     traveling within a base to build
+Be able to take workers off of gas
+Have bar (like the resource bar at the top) that includes number of workers?
+Have a config file for all specific gameplay values
 
 
+
+___Other ideas___
+Playback feature?
+Have dependency arrows
+Show wait times due to travel/min/gas/supply
+Screenshot/image export?
+Show current supply count for when each task is started?
+Be able to send scouts away/bring them back?
+Have an order of icons along the top that shows the build order?
+It'd be cool to show what each task was constrained by.
+Either have 2 panes or take a snapshot to compare builds?
+Have an undo feature?
+Hover over a task's bar to show some info: start time, end time, producer?, resource count, what constrained it
+    Example:
+        minerals: ready @ 3:10
+        gas: ready @ <styled red>4:00</styled red>
+        producer: ready @ 3:30
+Be able to zoom on the chart?
+Allow for hiding panels/views?
 
 
 Program could have 2 modes: precision and easy: (More trouble than it's worth?)
@@ -59,8 +81,14 @@ How to handle tech labs/reactors and liftoff?
     or, multiselect a building and addon then click join or something
 scvs are occupied when building 
 Support repairing from mules/scvs?
-
-
+Calldown: Extra Supplies requires a target, namely, a supply depot that doesn't already have extra supplies.
+    Should you be able to pick a target?
+    Should you be able to tell which depot has the extra supplies? Yes.
+The Ghost Academy can arm a nuke, so that should be displayed so armed silos can be distinguished from unarmed silos.
+Support partial construction of building?
+Showing state of buildings:
+    Armed nuke silo or not armed
+    Depot with extra supplies or not
 
 
 ___Zerg___
@@ -82,3 +110,8 @@ High/Dark Templar must be able to merge for archons
 Handle chrono, which is odd because it isn't a task, so it should be done at the earliest possible time
     Possibly set it after a given thing starts or finished (gantt connection)
 Should chrono be shown on the chart somehow, showing what chrono was affecting?
+How to do warp and cooldown?
+Need to support mothership, archon, and warpgate upgrade/merge/transform
+Warp conduit? (Units warped in from a warp prism or a pylon near a nexus or warpgate have a faster warp time)
+    Keep in mind that it matters how quickly units warp in because it will affect starting an archon morph
+    Probably need 2 options for warp: warp conduit and not.
