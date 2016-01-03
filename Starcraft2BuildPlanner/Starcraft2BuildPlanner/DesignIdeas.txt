@@ -48,7 +48,7 @@ Hover over a task's bar to show some info: start time, end time, producer?, reso
         producer: ready @ 3:30
 Be able to zoom on the chart?
 Allow for hiding panels/views?
-
+Support long distance mining? Probably not.
 
 Program could have 2 modes: precision and easy: (More trouble than it's worth?)
     Easy mode:
@@ -95,6 +95,11 @@ ___Zerg___
 Need to have overlord, zergling, roach, hydra, and corruptor available for morphing
 Need to have larva available, where do they show up? Next to hatch where they are? Or accessed through hatch menu?
     I don't really like accessing through hatch menu, seems less good.
+    Possibly have base panels, which shows the status of each base:
+        Has townhall or not, multiple for "macro" townhalls
+        Larva/cocoons
+        Resources left for each mineral patch/vespene geyser
+        Number of workers working each mineral patch/vespene geyser
 Show when larva production is blocked?
 Handle morphing of structures to structures and workers to structures
 

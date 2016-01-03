@@ -2,7 +2,7 @@
 General Notes
     Can halt production of buildings to free the SCV (this could be used to block areas)
 Command Center
-    Train SCV
+    Train SCV (No Reqs)
     Upgrade to Orbital Command (Req: Barracks)
     Upgrade to Planetary Fortress (Req: Engineering Bay)
     Load (up to 5 SCVs) (SCVs live if CC is destroyed)
@@ -14,16 +14,16 @@ Command Center (lifted off)
     Land
     Unload All (if it has at least one scv inside)
 Orbital Command
-    Train SCV
+    Train SCV (No Reqs)
     Set Rally Point
-    Calldown: MULE
-    Calldown: Extra Supplies (need an existing supply depot that doesn't already have additional supplies)
-    Scanner Sweep
+    Calldown: MULE (No Reqs)
+    Calldown: Extra Supplies (need an existing supply depot that doesn't already have additional supplies) (No Reqs)
+    Scanner Sweep (No Reqs)
     Lift Off
 Orbital Command (lifted off)
     Land
 Planetary Fortress
-    Train SCV
+    Train SCV (No Reqs)
     Set Rally Point
     Load (up to 5 SCVs)
     Unload All (if it has at least one scv inside)
@@ -32,31 +32,31 @@ Supply Depot
     Lower (if raised)
     Raise (if lowered)
 Barracks
-    Train Marine
-    Train Reaper
+    Train Marine (No Req)
+    Train Reaper (No Req)
     Train Marauder (Req: Attached Tech Lab)
     Train Ghost (Req: Attached Tech Lab, Ghost Academy)
     Set Rally Point
-    Build Tech Lab (only with nothing attached)
-    Build Reactor (only with nothing attached)
+    Build Tech Lab (only with nothing attached) (No Req)
+    Build Reactor (only with nothing attached) (No Req)
     Lift Off/Land
 Tech Lab (attached to Barracks)
-    Research Combat Shield
-    Research Stimpack
-    Research Concussive Shells
+    Research Combat Shield (No Req)
+    Research Stimpack (No Req)
+    Research Concussive Shells (No Req)
 Tech Lab (not attached) (nothing)
 Reactor (nothing, no matter what it's attached to)
 Engineering Bay
-    Upgrade Infantry Weapons Level 1 (then 2, then 3)
+    Upgrade Infantry Weapons Level 1 (No Req)
     Upgrade Infantry Weapons Level 2 (Req: Level 1 and Armory)
     Upgrade Infantry Weapons Level 3 (Req: Level 2 and Armory)
-    Upgrade Infantry Armor Level 1 (then 2, then 3)
+    Upgrade Infantry Armor Level 1 (No Req)
     Upgrade Infantry Armor Level 2 (Req: Level 1 and Armory)
     Upgrade Infantry Armor Level 3 (Req: Level 2 and Armory)
-    Research Hi-Sec Auto Tracking
-    Research Neosteel Frame (2 extra spots in bunker, 5 extra spots in Command Center and Planetary Fortress)
-    Upgrade Structure Armor
-Bunker (empty)
+    Research Hi-Sec Auto Tracking (No Req)
+    Research Neosteel Frame (2 extra spots in bunker, 5 extra spots in Command Center and Planetary Fortress) (No Req)
+    Upgrade Structure Armor (No Req)
+Bunker (empty)`9
     Set Bunker Rally Point
     Load
     Salvage
@@ -69,56 +69,62 @@ Bunker (with units inside)
 Missile Turret (nothing)
 Sensor Tower (nothing)
 Ghost Academy
-    Research Personal Cloaking
-    Arm Silo with Nuke
+    Research Personal Cloaking (No Req)
+    Arm Silo with Nuke (Req: Factory, No Nuke in this Ghost Academy)
 Factory
-    Build Hellion
-    Build Widow Mine
+    Build Hellion (No Req)
+    Build Widow Mine (No Req)
     Build Siege Tank (Req: Attached Tech Lab)
     Build Cyclone (Req: Attached Tech Lab)
     Build Hellbat (Req: Armory)
     Build Thor (Req: Attached Tech Lab, Armory)
-    Build Tech Lab (only with nothing attached)
-    Build Reactor (only with nothing attached)
+    Build Tech Lab (only with nothing attached) (No Req)
+    Build Reactor (only with nothing attached) (No Req)
     Set Rally Point
     Lift Off/Land
 Tech Lab (attached to Factory)
-    Research Infernal Pre-Igniter
+    Research Infernal Pre-Igniter (No Req)
     Research Drilling Claws (Req: Armory)
-    Research Mag-Field Accelerator
+    Research Mag-Field Accelerator (No Req)
 Armory
-    Upgrade Vehicle Weapons Level 1 (then 2, then 3)
-    Upgrade Vehicle and Ship Plating Level 1 (then 2, then 3)
-    Upgrade Ship Weapons Level 1 (then 2, then 3)
+    Upgrade Vehicle Weapons Level 1 (No Req)
+    Upgrade Vehicle Weapons Level 2 (Req: Level 1)
+    Upgrade Vehicle Weapons Level 3 (Req: Level 2)
+    Upgrade Vehicle and Ship Plating Level 1 (No Req)
+    Upgrade Vehicle and Ship Plating Level 2 (Req: Level 1)
+    Upgrade Vehicle and Ship Plating Level 3 (Req: Level 2)
+    Upgrade Ship Weapons Level 1 (No Req)
+    Upgrade Ship Weapons Level 2 (Req: Level 1)
+    Upgrade Ship Weapons Level 3 (Req: Level 2)
 Starport
-    Build Viking
-    Build Medivac
-    Build Liberator
+    Build Viking (No Req)
+    Build Medivac (No Req)
+    Build Liberator (No Req)
     Build Raven (Req: Attached Tech Lab)
     Build Banshee (Req: Attached Tech Lab)
     Build Battlecruiser (Req: Attached Tech Lab, Fusion Core)
     Set Rally Point
-    Build Tech Lab (only with nothing attached)
-    Build Reactor (only with nothing attached)
+    Build Tech Lab (only with nothing attached) (No Req)
+    Build Reactor (only with nothing attached) (No Req)
     Liftoff/Land
 Tech Lab (attached to Starport)
-    Research High Capacity Fuel Tanks
-    Research Explosive Shrapnel Shells
-    Research Corvid Reactor
-    Research Cloaking Field
-    Research Hyperflight Rotors (Req: Fusion Core)
-    Research Advanced Ballistics (Req: Fusion Core)
+    Research High Capacity Fuel Tanks (No Req)
+    Research Explosive Shrapnel Shells (No Req)
+    Research Corvid Reactor (No Req)
+    Research Cloaking Field (No Req)
+    Research Hyperflight Rotors (No Req)
+    Research Advanced Ballistics (No Req)
 Fusion Core
-    Research Weapon Refit
-    Research Behemoth Reactor
+    Research Weapon Refit (No Req)
+    Research Behemoth Reactor (No Req)
 
 SCV
     Gather (Harvesting Minerals or Vespene)
     Return Cargo (if it has cargo)
     Build Structure
-        Build Command Center
-        Build Refinery
-        Build Supply Depot
+        Build Command Center (No Reqs)
+        Build Refinery (No Reqs)
+        Build Supply Depot (No Reqs)
         Build Barracks (Req: Supply Depot)
         Build Engineering Bay (Req: Command Center)
         Build Bunker (Req: Barracks)
@@ -138,14 +144,14 @@ MULE
 Marine
     Use Stimpack (Req: Research)
 Reaper
-    KD8 Charge
+    KD8 Charge (HELP!!!!!!!!!!!)
 Marauder
     Use Stimpack (Req: Research)
 Ghost
     Tac Nuke Strike (Req: Nuke at Ghost Academy)
     Hold Fire/Weapons Free
-    Steady Targeting
-    EMP Round
+    Steady Targeting (HELP!!!!!!!!!!!)
+    EMP Round (HELP!!!!!!!!!!!)
     Cloak/Decloak (Req: Research, drains energy)
 Hellion/Hellbat
     Hellbat Mode/Hellion Mode (Req: Armory both ways)
@@ -166,17 +172,117 @@ Medivac
 Liberator
     Figher Mode/Defender Mode
 Raven
-    Build Auto-Turret
-    Build Point Defense Drone
-    Seeker Missile
+    Build Auto-Turret (HELP!!!!!!!!!!!)
+    Build Point Defense Drone (HELP!!!!!!!!!!!)
+    Seeker Missile (HELP!!!!!!!!!!!)
 Auto-Turret (nothing)
 Point Defense Drone (nothing)
 Banshee
     Cloak/Decloak (Req: Research)
 Battlecruiser
     Yamato Cannon (Req: Research)
-    Tactical Jump
+    Tactical Jump (HELP!!!!!!!!!!!)
 
 ___Zerg___
+General Notes
+    Morphing structures can be canceled, giving drone back (basis for extractor trick)
+Hatchery (spawns with 1 larva)
+    Select Larvae
+    Birth Queen (Req: Spawning Pool)
+    Evolve Burrow (No Reqs)
+    Evolve Pneumatized Carapace (No Reqs)
+    Set Worker Rally Point
+    Set Rally Point
+    Mutate into Lair (Req: Spawning Pool)
+Extractor (nothing, no Reqs)
+Spawning Pool
+    Evolve Metabolic Boost (No Reqs)
+    Evolve Adrenal Glands (Req: Hive)
+Evolution Chamber
+    Evolve Melee Attacks Level 1 (HELP!!!!!!!!!!!)
+    Evolve Melee Attacks Level 2 (Req: Level 1 and Lair or better)
+    Evolve Melee Attacks Level 3 (HELP!!!!!!!!!!!)
+    Evolve Missile Attacks Level 1 (HELP!!!!!!!!!!!)
+    Evolve Missile Attacks Level 2 (Req: Level 1 and Lair or better)
+    Evolve Missile Attacks Level 3 (HELP!!!!!!!!!!!)
+    Evolve Ground Carapace Level 1 (HELP!!!!!!!!!!!)
+    Evolve Ground Carapace Level 2 (Req: Level 1 and Lair or better)
+    Evolve Ground Carapace Level 3 (HELP!!!!!!!!!!!)
+Roach Warren
+    Evolve Glial Reconstitution (Req: Lair or better)
+    Evolve Tunneling Claws (Req: Lair or better)
+Baneling Nest
+    Evolve Centrifugal Hooks (Req: Lair or better)
+Spine Crawler
+    Uproot/Root
+Spore Crawler
+    Uproot/Root
+Lair
+Hydralisk Den
+Lurker Den
+Infestation Pit
+Spire
+Nydus Network
+Nydus Worm
+Hive
+Ultralisk Cavern
+Greater Spire
+
+Larva
+    Morph to Drone (no Reqs)
+    Morph to Overlord (no Reqs)
+    Morph to Zergling (Req: Spawning Pool)
+    Morph to Roach (Req: Roach Warren)
+    Morph to Hydralisk (Req: Hydralisk Den)
+    Morph to Mutalisk (Req: Spire)
+    Morph to Corruptor (Req: Spire)
+    Morph to Infestor (Req: Infestation Pit)
+    Morph to Swarm Host (Req: Infestation Pit)
+    Morph to Viper (Req: Hive)
+    Morph to Ultralisk (Req: Ultralisk Cavern)
+Zerg Cocoon
+    Set Rally Point
+    Cancel (destroys the larva)
+Broodling (nothing)
+Drone
+    Gather
+    Return Cargo
+    Basic Mutation
+        Mutate into Hatchery (No Reqs)
+        Mutate into Extractor (No Reqs)
+        Mutate into Spawning Pool (Req: Hatchery or better)
+        Mutate into Evolution Chamber (Req: Hatchery or better)
+        Mutate into Roach Warren (Req: Spawning Pool)
+        Mutate into Baneling Nest (Req: Spawning Pool)
+        Mutate into Spine Crawler (Req: Spawning Pool)
+        Mutate into Spore Crawler (Req: Spawning Pool)
+    Advanced Mutation
+        Mutate into Hydralisk Den (Req: Lair or better)
+        Mutate into Infestation Pit (Req: Lair or better)
+        Mutate into Spire (Req: Lair or better)
+        Mutate into Nydus Network (Req: Lair or better)
+        Mutate into Ultralisk Cavern (Req: Hive)
+    Burrow (Req: Research)
+Overlord
+    Morph to Overseer (Req: Lair or better)
+    Generate Creep (Req: Lair or better)
+    Mutate Ventral Sacs (Req: Evolution Chamber)
+Transport Overlord
+    Morph to Overseer (Req: Lair or better)
+    Generate Creep (Req: Lair or better)
+    Load/Unload
+Zergling
+    Morph to Baneling (Req: Baneling Nest)
+    Burrow (Req: Research)
+Baneling
+    Explode
+    Enable Structure Attack
+    Burrow (Req: Research)
+Roach
+    Morph to Ravager (Req: Roach Warren)
+    Burrow (Req: Research)
+Ravager
+    Corrosive Bile (No Reqs)
+    Burrow (Req: Research)
 
 ___Protoss___
