@@ -27,8 +27,21 @@ Be able to have travel time? Useful for:
 Be able to take workers off of gas
 Have bar (like the resource bar at the top) that includes number of workers?
 Have a config file for all specific gameplay values
-
-
+Possibly have base panels, which shows the status of each base:
+    Has townhall or not, multiple for "macro" townhalls
+    Larva/cocoons
+    Resources left for each mineral patch/vespene geyser
+    Number of workers working each mineral patch/vespene geyser
+    Mules
+    Queens
+    Hatcherys could have an icon showing how many charges of Spawn Larvae it currently has
+Targeting:
+    Mules
+    Spawn Larvae
+    Calldown Supplies
+    Chrono Boost
+    Archon Merge?
+If there is an upgrade already in progress, that upgrade can't be researched elsewhere
 
 ___Other ideas___
 Playback feature?
@@ -95,11 +108,7 @@ ___Zerg___
 Need to have overlord, zergling, roach, hydra, and corruptor available for morphing
 Need to have larva available, where do they show up? Next to hatch where they are? Or accessed through hatch menu?
     I don't really like accessing through hatch menu, seems less good.
-    Possibly have base panels, which shows the status of each base:
-        Has townhall or not, multiple for "macro" townhalls
-        Larva/cocoons
-        Resources left for each mineral patch/vespene geyser
-        Number of workers working each mineral patch/vespene geyser
+    Access larva through the base details panel
 Show when larva production is blocked?
 Handle morphing of structures to structures and workers to structures
 

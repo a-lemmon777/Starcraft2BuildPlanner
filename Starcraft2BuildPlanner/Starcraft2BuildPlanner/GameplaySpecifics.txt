@@ -186,6 +186,8 @@ Battlecruiser
 ___Zerg___
 General Notes
     Morphing structures can be canceled, giving drone back (basis for extractor trick)
+    Canceling morphing units only returns 75% of resources
+    Canceling morphing buildings only returns 75% of resources
 Hatchery (spawns with 1 larva)
     Select Larvae
     Birth Queen (Req: Spawning Pool)
@@ -198,16 +200,18 @@ Extractor (nothing, No Reqs)
 Spawning Pool
     Evolve Metabolic Boost (No Reqs)
     Evolve Adrenal Glands (Req: Hive)
+Creep Tumor
+    Spawn Creep Tumor (No Reqs)
 Evolution Chamber
-    Evolve Melee Attacks Level 1 (HELP!!!!!!!!!!!)
+    Evolve Melee Attacks Level 1 (No Reqs)
     Evolve Melee Attacks Level 2 (Req: Level 1 and Lair or better)
-    Evolve Melee Attacks Level 3 (HELP!!!!!!!!!!!)
-    Evolve Missile Attacks Level 1 (HELP!!!!!!!!!!!)
+    Evolve Melee Attacks Level 3 (Req: Level 2 and Hive)
+    Evolve Missile Attacks Level 1 (No Reqs)
     Evolve Missile Attacks Level 2 (Req: Level 1 and Lair or better)
-    Evolve Missile Attacks Level 3 (HELP!!!!!!!!!!!)
-    Evolve Ground Carapace Level 1 (HELP!!!!!!!!!!!)
+    Evolve Missile Attacks Level 3 (Req: Level 2 and Hive)
+    Evolve Ground Carapace Level 1 (No Reqs)
     Evolve Ground Carapace Level 2 (Req: Level 1 and Lair or better)
-    Evolve Ground Carapace Level 3 (HELP!!!!!!!!!!!)
+    Evolve Ground Carapace Level 3 (Req: Level 2 and Hive)
 Roach Warren
     Evolve Glial Reconstitution (Req: Lair or better)
     Evolve Tunneling Claws (Req: Lair or better)
@@ -218,31 +222,68 @@ Spine Crawler
 Spore Crawler
     Uproot/Root
 Lair
+    Select Larvae
+    Birth Queen (Req: Spawning Pool)
+    Evolve Burrow (No Reqs)
+    Evolve Pneumatized Carapace (No Reqs)
+    Set Worker Rally Point
+    Set Rally Point
+    Mutate into Hive (Req: Infestation Pit)
 Hydralisk Den
+    Mutate Muscular Augments (No Reqs)
+    Mutate into Lurker Den (Req: Lair or better)
 Lurker Den
+    Mutate Muscular Augments (No Reqs)
 Infestation Pit
+    Evolve Pathogen Glands (No Reqs)
+    Evolve Neural Parasite (No Reqs)
 Spire
+    Evolve Flyer Attacks Level 1 (No Reqs)
+    Evolve Flyer Attacks Level 2 (Req: Level 1 and Lair or better)
+    Evolve Flyer Attacks Level 3 (Req: Level 2 and Hive)
+    Evolve Flyer Carapace Level 1 (No Reqs)
+    Evolve Flyer Carapace Level 2 (Req: Level 1 and Lair or better)
+    Evolve Flyer Carapace Level 3 (Req: Level 2 and Hive)
+    Mutate into Greater Spire (Req: Hive)
 Nydus Network
+    Summon Nydus Worm (No Reqs)
+    Set Rally Point
+    Load/Unload
 Nydus Worm
+    Set Rally Point
+    Load/Unload
 Hive
+    Select Larvae
+    Birth Queen (Req: Spawning Pool)
+    Evolve Burrow (No Reqs)
+    Evolve Pneumatized Carapace (No Reqs)
+    Set Worker Rally Point
+    Set Rally Point
 Ultralisk Cavern
+    Evolve Chitinous Plating (No Reqs)
 Greater Spire
+    Evolve Flyer Attacks Level 1 (No Reqs)
+    Evolve Flyer Attacks Level 2 (Req: Level 1 and Lair or better)
+    Evolve Flyer Attacks Level 3 (Req: Level 2 and Hive)
+    Evolve Flyer Carapace Level 1 (No Reqs)
+    Evolve Flyer Carapace Level 2 (Req: Level 1 and Lair or better)
+    Evolve Flyer Carapace Level 3 (Req: Level 2 and Hive)
 
 Larva
     Morph to Drone (No Reqs)
     Morph to Overlord (No Reqs)
     Morph to Zergling (Req: Spawning Pool)
     Morph to Roach (Req: Roach Warren)
-    Morph to Hydralisk (Req: Hydralisk Den)
-    Morph to Mutalisk (Req: Spire)
-    Morph to Corruptor (Req: Spire)
+    Morph to Hydralisk (Req: Hydralisk Den or Lurker Den)
+    Morph to Mutalisk (Req: Spire or Greater Spire)
+    Morph to Corruptor (Req: Spire or Greater Spire)
     Morph to Infestor (Req: Infestation Pit)
     Morph to Swarm Host (Req: Infestation Pit)
     Morph to Viper (Req: Hive)
     Morph to Ultralisk (Req: Ultralisk Cavern)
 Zerg Cocoon
     Set Rally Point
-    Cancel (destroys the larva)
+    Cancel (destroys the larva, but gives a full refund)
 Broodling (nothing)
 Drone
     Gather
@@ -265,24 +306,76 @@ Drone
     Burrow (Req: Research)
 Overlord
     Morph to Overseer (Req: Lair or better)
-    Generate Creep (Req: Lair or better)
+    Generate Creep (Req: Lair or better) (continues if Lair is destroyed, until toggled off)
     Mutate Ventral Sacs (Req: Evolution Chamber)
 Transport Overlord
     Morph to Overseer (Req: Lair or better)
-    Generate Creep (Req: Lair or better)
+    Generate Creep (Req: Lair or better) (continues if Lair is destroyed, until toggled off)
     Load/Unload
+Overlord Cocoon
+    Cancel
 Zergling
     Morph to Baneling (Req: Baneling Nest)
+    Burrow (Req: Research)
+Queen
+    Spawn Creep Tumor (No Reqs)
+    Spawn Larvae (No Reqs) (needs to target a hatch/lair/hive)
+    Transfusion (No Reqs)
     Burrow (Req: Research)
 Baneling
     Explode
     Enable Structure Attack
     Burrow (Req: Research)
+Baneling Cocoon
+    Cancel
 Roach
     Morph to Ravager (Req: Roach Warren)
     Burrow (Req: Research)
 Ravager
     Corrosive Bile (No Reqs)
     Burrow (Req: Research)
-
+Ravager Cocoon
+    Cancel
+Overseer
+    Spawn Changeling (No Reqs)
+    Contaminate (No Reqs)
+Overseer Cocoon
+    Cancel
+Changeling (nothing)
+Hydralisk
+    Morph to Lurker (Req: Lurker Den)
+    Burrow (Req: Research)
+Lurker
+    Hold Fire/Cancel Hold Fire
+    Burrow (No Burrow Research Required)
+Lurker Cocoon
+    Cancel
+Infestor
+    Infested Terran (No Reqs)
+    Fungal Growth (No Reqs)
+    Neural Parasite (Req: Research)
+    Burrow (Req: Research)
+Infested Swarm Egg (nothing)
+Infested Terran
+    Burrow (Req: Research)
+Swarm Host
+    Spawn Locusts (No Reqs)
+    Burrow (Req: Research)
+Locust (flying)
+    Swoop (No Reqs)
+Locust (on ground) (nothing)
+Mutalisk (none)
+Corruptor
+    Caustic Spray (No Reqs)
+    Morph to Brood Lord (Req: Greater Spire)
+Viper
+    Consume (No Reqs)
+    Abduct (No Reqs)
+    Blinding Cloud (No Reqs)
+    Parasitic Bomb (No Reqs)
+Brood Lord (nothing)
+Brood Lord Cocoon
+    Cancel
+Ultralisk
+    Burrow (Req: Research)
 ___Protoss___
