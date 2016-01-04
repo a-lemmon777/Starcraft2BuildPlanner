@@ -379,3 +379,141 @@ Brood Lord Cocoon
 Ultralisk
     Burrow (Req: Research)
 ___Protoss___
+General Notes
+Nexus
+    Warp In Probe (No Reqs)
+    Warp In Mothership Core (Reqs: No Mothership Core, No Mothership, Cybernetics Core)
+    Set Rally Point
+    Chrono Boost (must target a non-chronoboosted structure)
+Assimilator (nothing)
+Pylon
+    Warp Conduit (Req: Near Warp Gate or Nexus) (passive)
+Gateway
+    Warp In Zealot (No Reqs)
+    Warp In Sentry (Req: Cybernetics Core)
+    Warp In Stalker (Req: Cybernetics Core)
+    Warp In Adept (Req: Cybernetics Core)
+    Warp In High Templar (Req: Templar Archives)
+    Warp In Dark Templar (Req: Dark Shrine)
+    Set Rally Point
+    Transform to Warp Gate (Req: Research) (no cancel for transform)
+Warp Gate
+    Warp In Zealot (No Reqs)
+    Warp In Sentry (Req: Cybernetics Core)
+    Warp In Stalker (Req: Cybernetics Core)
+    Warp In Adept (Req: Cybernetics Core)
+    Warp In High Templar (Req: Templar Archives)
+    Warp In Dark Templar (Req: Dark Shrine)
+    Transform to Gateway (no cancel for transform)
+Cybernetics Core
+    Upgrade Air Weapons Level 1 (No Reqs)
+    Upgrade Air Weapons Level 2 (Req: Level 1 and Fleet Beacon)
+    Upgrade Air Weapons Level 3 (Req: Level 2 and Fleet Beacon)
+    Upgrade Air Armor Level 1 (No Reqs)
+    Upgrade Air Armor Level 2 (Req: Level 1 and Fleet Beacon)
+    Upgrade Air Armor Level 3 (Req: Level 2 and Fleet Beacon)
+    Research Warp Gate (No Reqs)
+Forge
+    Upgrade Ground Weapons Level 1 (No Reqs)
+    Upgrade Ground Weapons Level 2 (Req: Level 1 and Twilight Council)
+    Upgrade Ground Weapons Level 3 (Req: Level 2 and Twilight Council)
+    Upgrade Ground Armor Level 1 (No Reqs)
+    Upgrade Ground Armor Level 2 (Req: Level 1 and Twilight Council)
+    Upgrade Ground Armor Level 3 (Req: Level 2 and Twilight Council)
+    Upgrade Shields Level 1 (No Reqs)
+    Upgrade Shields Level 2 (Req: Level 1 and Twilight Council)
+    Upgrade Shields Level 3 (Req: Level 2 and Twilight Council)
+Photon Cannon (nothing)
+Twilight Council
+    Research Charge (No Reqs)
+    Research Blink (No Reqs)
+    Research Resonating Glaives (No Reqs)
+Templar Archives
+    Research Psionic Storm (No Reqs)
+Dark Shrine (nothing)
+Stargate
+    Warp In Phoenix (no Reqs)
+    Warp In Oracle (no Reqs)
+    Warp In Void Ray (no Reqs)
+    Warp In Tempest (Req: Fleet Beacon)
+    Warp In Carrier (Req: Fleet Beacon)
+Fleet Beacon
+    Research Anion Pulse-Crystals (no Reqs)
+    Research Grivaton Catipult (no Reqs)
+Robotics Facility
+    Warp In Observer (no Reqs)
+    Warp In Warp Prism (no Reqs)
+    Warp In Immortal (no Reqs)
+    Warp In Colossus (Req: Robotics Bay)
+    Warp In Disruptor (Req: Robotics Bay)
+Robotics Bay
+    Research Gravitic Boosters (no Reqs)
+    Research Gravitic Drive (no Reqs)
+    Research Extended Thermal Lance (no Reqs)
+Probe
+    Gather
+    Return Cargo
+    Warp In Structure
+        Warp In Nexus (No Reqs)
+        Warp In Assimilator (No Reqs)
+        Warp In Pylon (No Reqs)
+        Warp In Gateway (Req: Nexus)
+        Warp In Forge (Req: Nexus)
+        Warp In Cybernetics Core (Req: Gateway/Warp Gate)
+        Warp In Photon Cannon (Req: Forge)
+    Warp In Advanced Structure
+        Warp In Twilight Council (Req: Cybernetics Core)
+        Warp In Templar Archives (Req: Twilight Council)
+        Warp In Dark Shrine (Req: Twilight Council)
+        Warp In Stargate (Req: Cybernetics Core)
+        Warp In Fleet Beacon (Req: Stargate)
+        Warp In Robotics Facility (Req: Cybernetics Core)
+        Warp In Robotics Bay (Req: Robotics Facility)
+Zealot
+    Charge (Req: Research)
+Sentry
+    Force Field (No Reqs)
+    Guardian Shield (No Reqs)
+    Hallucination (No Reqs)
+Stalker
+    Blink (Req: Research)
+Adept
+    Psionic Transfer (No Reqs)
+Mothership Core
+    Upgrade to Mothership (Req: Fleet Beacon, No Mothership) (cancelling returns 75% resources)
+    Photon Overcharge (No Reqs)
+    Mass Recall (No Reqs)
+    Time Warp (No Reqs)
+High Templar 
+    Feedback (No Reqs)
+    Psionic Storm (Req: Research)
+    Archon Merge (No Reqs)
+Dark Templar
+    Archon Merge (No Reqs)
+Archon (nothing) (can't cancel merge)
+Phoenix
+    Graviton Beam (No Reqs)
+Oracle
+    Revelation (No Reqs)
+    Statis Ward (No Reqs)
+    Activate Pulsar Beam (No Reqs)
+Void Ray
+    Prismatic Alignment (No Reqs)
+Tempest (nothing)
+Carrier (starts with 4 interceptors)
+    Build Interceptor (must have fewer than 8 interceptors)
+    Release Interceptors (No Reqs, just need interceptors, interceptors expire)
+    Cancel
+Mothership
+    Photon Overcharge (No Reqs)
+    Mass Recall (No Reqs)
+    Time Warp (No Reqs)
+Observer (nothing)
+Warp Prism (has Warp Conduit)
+    Phasing Mode/Transport Mode (no Reqs)
+    Load/Unload
+Immortal
+    Barrier (No Reqs)
+Colossus (nothing)
+Disruptor
+    Purification Nova (No Reqs)
