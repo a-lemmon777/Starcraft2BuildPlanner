@@ -26,16 +26,22 @@
                     <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
                     <Setter Property="IsExpanded" Value="True"/>
                 </Style>
+                <Style x:Key="ItemsControlSixWide" TargetType="ItemsControl">
+                    <Setter Property="ItemsPanel">
+                        <Setter.Value>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="6" />
+                            </ItemsPanelTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
             </TabControl.Resources>
             <TabItem Header="Base 1">
-                <StackPanel Width="288">
+                <StackPanel>
                     <Expander Header="Command Structures">
-                        <WrapPanel>
+                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-building-terran-commandcenter}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
                             </Button>
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-upgrade-terran-infantryweaponslevel1}"/>
@@ -50,17 +56,41 @@
                                     </Image.OpacityMask>
                                 </Image>
                             </Button>
-                            <Button Style="{StaticResource TerranButton}"/>
-                            <Button Style="{StaticResource TerranButton}"/>
-                            <Button Style="{StaticResource TerranButton}"/>
+                        </ItemsControl>
+                    </Expander>
+                    <Expander Header="Idle Workers">
+                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
                             <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource btn-building-terran-refinery}"/>
+                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
                             </Button>
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-unit-terran-mule}"/>
                             </Button>
+                        </ItemsControl>
+                    </Expander>
+                    <Expander Header="Resources">
+                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
                             <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource icon-mineral-nobg}"/>
+                                <Grid>
+                                    <Image Source="{StaticResource icon-mineral-nobg}"/>
+                                    <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
+                                        <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">1500</TextBlock>
+                                    </Border>
+                                </Grid>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Grid>
+                                    <Image Source="{StaticResource icon-mineral-nobg}"/>
+                                    <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
+                                        <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">900</TextBlock>
+                                    </Border>
+                                </Grid>
                             </Button>
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource icon-highyieldmineral-nobg}"/>
@@ -68,29 +98,16 @@
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-doodad-vespenegeyser}"/>
                             </Button>
-                        </WrapPanel>
-                    </Expander>
-                    <Expander Header="Idle Workers">
-                        <ItemsControl>
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <UniformGrid Columns="6" />
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Button Content="{Binding}" Margin="0,0,5,5" />
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                            <system:String>Item #1</system:String>
-                            <system:String>Item #2</system:String>
-                            <system:String>Item #3</system:String>
-                            <system:String>Item #4</system:String>
-                            <system:String>Item #5</system:String>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-building-terran-refinery}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-mule}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
+                            </Button>
                         </ItemsControl>
-                    </Expander>
-                    <Expander Header="Resources">
-
                     </Expander>
                 </StackPanel>
             </TabItem>
@@ -100,11 +117,10 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Everything Else">
-                <StackPanel Width="288">
+                <StackPanel>
                     <Expander Header="Structures">
-                        <WrapPanel>
+                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
                             <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
                             </Button>
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-unit-terran-scv}"/>
@@ -125,13 +141,17 @@
                             <Button Style="{StaticResource TerranButton}"/>
                             <Button Style="{StaticResource TerranButton}"/>
                             <Button Style="{StaticResource TerranButton}"/>
-                        </WrapPanel>
+                        </ItemsControl>
                     </Expander>
-                    <Expander  Header="Structures with Add-Ons">
-                        
+                    <Expander Header="Structures with Add-Ons">
+                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
+                            
+                        </ItemsControl>
                     </Expander>
-                    <Expander  Header="Units">
+                    <Expander Header="Units">
+                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
 
+                        </ItemsControl>
                     </Expander>
                 </StackPanel>
             </TabItem>
