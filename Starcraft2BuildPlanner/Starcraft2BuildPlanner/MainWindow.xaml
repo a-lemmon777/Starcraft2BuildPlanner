@@ -11,6 +11,9 @@
         d:DesignHeight="742.877"
         WindowStartupLocation="CenterScreen"
         Icon="{StaticResource MainWindowIcon}">
+    <Window.Resources>
+        <Brush x:Key="TextColor">BlueViolet</Brush>
+    </Window.Resources>
     <Window.Background>
         <ImageBrush ImageSource="/Images/ui_battlenet_glues_topnav_hexpattern.png" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,26,30"/>
     </Window.Background>
@@ -18,9 +21,15 @@
 
         <!-- Unit and structure selection panel -->
         <TabControl DockPanel.Dock="Right" TabStripPlacement="Left" HorizontalAlignment="Right" Background="#CC000000">
+            <TabControl.Resources>
+                <Style TargetType="Expander">
+                    <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+                    <Setter Property="IsExpanded" Value="True"/>
+                </Style>
+            </TabControl.Resources>
             <TabItem Header="Base 1">
                 <StackPanel Width="288">
-                    <HeaderedContentControl Header="Command Structures" Foreground="BlueViolet">
+                    <Expander Header="Command Structures">
                         <WrapPanel>
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
@@ -45,8 +54,8 @@
                             <Button Style="{StaticResource TerranButton}"/>
                             <Button Style="{StaticResource TerranButton}"/>
                         </WrapPanel>
-                    </HeaderedContentControl>
-                    <HeaderedContentControl Header="Idle Workers" Foreground="BlueViolet">
+                    </Expander>
+                    <Expander Header="Idle Workers">
                         <ItemsControl>
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>
@@ -64,10 +73,10 @@
                             <system:String>Item #4</system:String>
                             <system:String>Item #5</system:String>
                         </ItemsControl>
-                    </HeaderedContentControl>
-                    <HeaderedContentControl Header="Resources" Foreground="BlueViolet">
+                    </Expander>
+                    <Expander Header="Resources">
 
-                    </HeaderedContentControl>
+                    </Expander>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Base 2">
@@ -77,13 +86,44 @@
             </TabItem>
             <TabItem Header="Everything Else">
                 <StackPanel Width="288">
+                    <Expander Header="Structures">
+                        <WrapPanel>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-upgrade-terran-infantryweaponslevel1}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                <Image Source="{StaticResource convertedImage}">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="{StaticResource btn-building-terran-orbitalcommand}"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}"/>
+                            <Button Style="{StaticResource TerranButton}"/>
+                            <Button Style="{StaticResource TerranButton}"/>
+                        </WrapPanel>
+                    </Expander>
+                    <Expander  Header="Structures with Add-Ons">
+                        
+                    </Expander>
+                    <Expander  Header="Units">
 
+                    </Expander>
                 </StackPanel>
             </TabItem>
         </TabControl>
 
         <!-- Footer -->
-        <TextBlock DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="BlueViolet" Background="Black">
+        <TextBlock DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="{StaticResource TextColor}" Background="Black">
             Author: Aaron Lemmon | 
             <Hyperlink Foreground="#FF0066CC" RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/lemmo031/Starcraft2BuildPlanner">
                 Source Code
