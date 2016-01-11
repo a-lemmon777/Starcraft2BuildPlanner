@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Starcraft2BuildPlanner.ResourceDictionaries">
+    <BitmapImage x:Key="MainWindowIcon" UriSource="/Images/icon-mineral-nobg.png"/>
+    <BitmapImage x:Key="btn-unit-terran-scv" UriSource="/Images/btn-unit-terran-scv.png"/>
+    <ImageBrush x:Key="TerranButtonFrameNormalBrush" ImageSource="/Images/ui_commandcard_terranframe_normal.png"/>
+    <ImageBrush x:Key="TerranButtonFrameHoverBrush" ImageSource="/Images/ui_ingame_help_glossary_terran_normaloverandpressedover1.png"/>
+</ResourceDictionary>
