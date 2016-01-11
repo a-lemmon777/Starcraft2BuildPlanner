@@ -15,19 +15,28 @@
         <ImageBrush ImageSource="/Images/ui_battlenet_glues_topnav_hexpattern.png" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,26,30"/>
     </Window.Background>
     <DockPanel>
+
         <!-- Unit and structure selection panel -->
-        <TabControl DockPanel.Dock="Right" TabStripPlacement="Left" HorizontalAlignment="Right" Background="White">
+        <TabControl DockPanel.Dock="Right" TabStripPlacement="Left" HorizontalAlignment="Right" Background="#CC000000">
             <TabItem Header="Base 1">
                 <StackPanel Width="288">
-                    <HeaderedContentControl Header="Command Structures">
+                    <HeaderedContentControl Header="Command Structures" Foreground="BlueViolet">
                         <WrapPanel>
-                            <Button Style="{StaticResource TerranButton}"/>
-                            <Button Style="{StaticResource TerranButton}"/>
-                            <Button Style="{StaticResource TerranButton}"/>
-                            <Button Style="{StaticResource TerranButton}"/>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-scv}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-upgrade-terran-infantryweaponslevel1}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
+                            </Button>
                         </WrapPanel>
                     </HeaderedContentControl>
-                    <HeaderedContentControl Header="Idle Workers">
+                    <HeaderedContentControl Header="Idle Workers" Foreground="BlueViolet">
                         <ItemsControl>
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>
@@ -46,7 +55,7 @@
                             <system:String>Item #5</system:String>
                         </ItemsControl>
                     </HeaderedContentControl>
-                    <HeaderedContentControl Header="Resources">
+                    <HeaderedContentControl Header="Resources" Foreground="BlueViolet">
 
                     </HeaderedContentControl>
                 </StackPanel>
@@ -62,6 +71,7 @@
                 </StackPanel>
             </TabItem>
         </TabControl>
+
         <!-- Footer -->
         <TextBlock DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="BlueViolet" Background="Black">
             Author: Aaron Lemmon | 

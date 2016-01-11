@@ -3,6 +3,10 @@
                     xmlns:local="clr-namespace:Starcraft2BuildPlanner.ResourceDictionaries">
     <BitmapImage x:Key="MainWindowIcon" UriSource="/Images/icon-mineral-nobg.png"/>
     <BitmapImage x:Key="btn-unit-terran-scv" UriSource="/Images/btn-unit-terran-scv.png"/>
+    <BitmapImage x:Key="btn-upgrade-terran-infantryweaponslevel1" UriSource="/Images/btn-upgrade-terran-infantryweaponslevel1.png"/>
+    <BitmapImage x:Key="btn-building-terran-orbitalcommand" UriSource="/Images/btn-building-terran-surveillancestation.png"/>
     <ImageBrush x:Key="TerranButtonFrameNormalBrush" ImageSource="/Images/ui_commandcard_terranframe_normal.png"/>
     <ImageBrush x:Key="TerranButtonFrameHoverBrush" ImageSource="/Images/ui_ingame_help_glossary_terran_normaloverandpressedover1.png"/>
+    <ImageBrush x:Key="TerranButtonFramePressedBrush" ImageSource="/Images/ui_commandcard_terranframe_highlighted.png"/>
+    <ImageBrush x:Key="ButtonFrameDisabledBrush" ImageSource="/Images/ui_techpurchasebutton_disabled.png"/>
 </ResourceDictionary>
