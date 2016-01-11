@@ -32,7 +32,7 @@
                     <Expander Header="Command Structures">
                         <WrapPanel>
                             <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
+                                <Image Source="{StaticResource btn-building-terran-commandcenter}"/>
                             </Button>
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-unit-terran-scv}"/>
@@ -53,6 +53,21 @@
                             <Button Style="{StaticResource TerranButton}"/>
                             <Button Style="{StaticResource TerranButton}"/>
                             <Button Style="{StaticResource TerranButton}"/>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-building-terran-refinery}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-unit-terran-mule}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource icon-mineral-nobg}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource icon-highyieldmineral-nobg}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource btn-doodad-vespenegeyser}"/>
+                            </Button>
                         </WrapPanel>
                     </Expander>
                     <Expander Header="Idle Workers">

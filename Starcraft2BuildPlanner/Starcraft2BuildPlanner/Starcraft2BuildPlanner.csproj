@@ -123,7 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\btn-unit-terran-scv.png" />
-    <Resource Include="Images\icon-mineral-nobg.png" />
+    <Resource Include="Images\icon-mineral-nobg1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -160,6 +160,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\btn-building-terran-surveillancestation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-building-terran-commandcenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-building-terran-refinery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-doodad-vespenegeyser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-unit-terran-mule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-mineral-nobg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-highyieldmineral-nobg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

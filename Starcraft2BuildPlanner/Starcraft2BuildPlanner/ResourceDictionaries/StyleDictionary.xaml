@@ -33,11 +33,6 @@
         </Style.Triggers>
     </Style>
 
-    <!-- Image of SCV for buttons -->
-    <DataTemplate x:Key="SCVImage" DataType="Button">
-        <Image Source="{StaticResource btn-unit-terran-scv}"/>
-    </DataTemplate>
-
     <!--Terran specific button-->
     <Style x:Key="TerranButton" TargetType="Button" BasedOn="{StaticResource CommandCardButton}">
         <Setter Property="OverridesDefaultStyle" Value="True"/>
