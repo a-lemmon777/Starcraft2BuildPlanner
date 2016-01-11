@@ -7,10 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ResourceDictionaries/ImageDictionary.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/StyleDictionary.xaml"/> <!-- Note: this references ImageDictionary -->
             </ResourceDictionary.MergedDictionaries>
-            <Style TargetType="Button">
-                <Setter Property="Foreground" Value="Blue"/>
-            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

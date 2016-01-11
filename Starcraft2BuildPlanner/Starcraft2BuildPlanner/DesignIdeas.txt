@@ -18,7 +18,7 @@ When building townhall/gasHarvestBuildings, need to say which base they should g
     Need a way to force only 2 vespene per base
 Perhaps the default should be "standard" resource locations, with the possibility to create custom resource locations (3 gas or something)
     user can create resource locations as needed as the sim progresses
-Should have a die option for every unit (and building for factory scout?) to free up supply
+Should have a die/destroy/sacrifice option for every unit (and building for factory scout?) to free up supply
 Should have a cancel option (or at least support for extractor trick)
 Be able to have travel time? Useful for:
     transferring workers
@@ -109,8 +109,14 @@ Need to have overlord, zergling, roach, hydra, and corruptor available for morph
 Need to have larva available, where do they show up? Next to hatch where they are? Or accessed through hatch menu?
     I don't really like accessing through hatch menu, seems less good.
     Access larva through the base details panel
+    Allow larva without a townhall? Probably not.
+    Larvae SHOULD be tied to a specific townhall to easily show when a townhall is larva blocked
 Show when larva production is blocked?
 Handle morphing of structures to structures and workers to structures
+Be able to let program decide which larva to use for building a combat unit?
+    This seems a little hard to optimize:
+        Use hatch with fewest larva? (not optimal if another hatch is at exactly 3 larva)
+        Use hatch with 3 larva (to unblock larva production)
 
 
 

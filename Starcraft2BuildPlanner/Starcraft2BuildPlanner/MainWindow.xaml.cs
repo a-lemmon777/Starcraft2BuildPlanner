@@ -11,17 +11,6 @@ namespace Starcraft2BuildPlanner
         public MainWindow()
         {
             InitializeComponent();
-            pnlMainGrid.MouseDown += PnlMainGrid_MouseDown;
-        }
-
-        private void PnlMainGrid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            MessageBox.Show("Hello!");
-        }
-
-        private void pnlMainGrid_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            MessageBox.Show("You clicked me at " + e.GetPosition(this).ToString());
         }
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
