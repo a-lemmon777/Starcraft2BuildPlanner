@@ -45,7 +45,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
                     <Border x:Name="myBorder" Margin="1" Background="{StaticResource TerranButtonFrameNormalBrush}">
-                        <ContentPresenter/>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">

@@ -34,6 +34,16 @@
                             <Button Style="{StaticResource TerranButton}" IsEnabled="False">
                                 <Image Source="{StaticResource btn-building-terran-orbitalcommand}"/>
                             </Button>
+                            <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                <Image Source="{StaticResource convertedImage}">
+                                    <Image.OpacityMask>
+                                        <ImageBrush ImageSource="{StaticResource btn-building-terran-orbitalcommand}"/>
+                                    </Image.OpacityMask>
+                                </Image>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}"/>
+                            <Button Style="{StaticResource TerranButton}"/>
+                            <Button Style="{StaticResource TerranButton}"/>
                         </WrapPanel>
                     </HeaderedContentControl>
                     <HeaderedContentControl Header="Idle Workers" Foreground="BlueViolet">
