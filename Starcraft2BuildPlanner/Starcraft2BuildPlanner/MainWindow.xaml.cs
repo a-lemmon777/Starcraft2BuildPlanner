@@ -22,14 +22,31 @@ namespace Starcraft2BuildPlanner
             for (int i = 0; i < 2; i++)
             {
                 List<Button> node = new List<Button>();
-                node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("btn-doodad-vespenegeyser") as BitmapImage } });
-                node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("btn-building-terran-refinery") as BitmapImage } });
+                node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("VespeneGeyserImage") as BitmapImage } });
+                node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("RefineryImage") as BitmapImage } });
                 for (int j = 0; j < 3; j++)
                 {
-                    node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("btn-unit-terran-scv") as BitmapImage } });
+                    node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("SCVImage") as BitmapImage } });
                 }
                 resourceNodes.Add(node);
             }
+            for (int i = 0; i < 8; i++)
+            {
+                List<Button> node = new List<Button>();
+                node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("MineralImage") as BitmapImage } });
+                for (int j = 0; j < 3; j++)
+                {
+                    node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("SCVImage") as BitmapImage } });
+                }
+                for (int j = 0; j < 2; j++)
+                {
+                    node.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("MuleImage") as BitmapImage } });
+                }
+                resourceNodes.Add(node);
+            }
+            List<Button> node2 = new List<Button>();
+            node2.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style, Content = new Image() { Source = Application.Current.FindResource("HighYieldMineralImage") as BitmapImage } });
+            resourceNodes.Add(node2);
             ResourceNodes.ItemsSource = resourceNodes;
         }
 

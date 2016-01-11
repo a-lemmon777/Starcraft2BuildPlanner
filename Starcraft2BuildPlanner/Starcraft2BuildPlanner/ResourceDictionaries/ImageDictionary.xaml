@@ -5,24 +5,24 @@
     <BitmapImage x:Key="MainWindowIcon" UriSource="/Images/icon-mineral-nobg1.png"/>
     
     <!-- Buildings -->
-    <BitmapImage x:Key="btn-building-terran-commandcenter" UriSource="/Images/btn-building-terran-commandcenter.png"/>
-    <BitmapImage x:Key="btn-building-terran-refinery" UriSource="/Images/btn-building-terran-refinery.png"/>
-    <BitmapImage x:Key="btn-building-terran-orbitalcommand" UriSource="/Images/btn-building-terran-surveillancestation.png"/>
+    <BitmapImage x:Key="CommandCenterImage" UriSource="/Images/btn-building-terran-commandcenter.png"/>
+    <BitmapImage x:Key="RefineryImage" UriSource="/Images/btn-building-terran-refinery.png"/>
+    <BitmapImage x:Key="OrbitalCommandImage" UriSource="/Images/btn-building-terran-surveillancestation.png"/>
     
     <!-- Resource Nodes -->
-    <BitmapImage x:Key="icon-mineral-nobg" UriSource="/Images/icon-mineral-nobg.png"/>
-    <BitmapImage x:Key="icon-highyieldmineral-nobg" UriSource="/Images/icon-highyieldmineral-nobg.png"/>
-    <BitmapImage x:Key="btn-doodad-vespenegeyser" UriSource="/Images/btn-doodad-vespenegeyser.png"/>
+    <BitmapImage x:Key="MineralImage" UriSource="/Images/icon-mineral-nobg.png"/>
+    <BitmapImage x:Key="HighYieldMineralImage" UriSource="/Images/icon-highyieldmineral-nobg.png"/>
+    <BitmapImage x:Key="VespeneGeyserImage" UriSource="/Images/btn-doodad-vespenegeyser.png"/>
     
     <!-- Units -->
-    <BitmapImage x:Key="btn-unit-terran-scv" UriSource="/Images/btn-unit-terran-scv.png"/>
-    <BitmapImage x:Key="btn-unit-terran-mule" UriSource="/Images/btn-unit-terran-mule.png"/>
+    <BitmapImage x:Key="SCVImage" UriSource="/Images/btn-unit-terran-scv.png"/>
+    <BitmapImage x:Key="MuleImage" UriSource="/Images/btn-unit-terran-mule.png"/>
     
     <!-- Upgrades -->
-    <BitmapImage x:Key="btn-upgrade-terran-infantryweaponslevel1" UriSource="/Images/btn-upgrade-terran-infantryweaponslevel1.png"/>
+    <BitmapImage x:Key="InfantryWeaponsLevel1Image" UriSource="/Images/btn-upgrade-terran-infantryweaponslevel1.png"/>
     
     <!-- Other -->
-    <netfx:FormatConvertedBitmap x:Key="convertedImage" Source="{StaticResource btn-building-terran-orbitalcommand}" DestinationFormat="Gray32Float"/>
+    <netfx:FormatConvertedBitmap x:Key="convertedImage" Source="{StaticResource OrbitalCommandImage}" DestinationFormat="Gray32Float"/>
     <ImageBrush x:Key="TerranButtonFrameNormalBrush" ImageSource="/Images/ui_commandcard_terranframe_normal.png"/>
     <ImageBrush x:Key="TerranButtonFrameHoverBrush" ImageSource="/Images/ui_ingame_help_glossary_terran_normaloverandpressedover1.png"/>
     <ImageBrush x:Key="TerranButtonFramePressedBrush" ImageSource="/Images/ui_commandcard_terranframe_highlighted.png"/>
