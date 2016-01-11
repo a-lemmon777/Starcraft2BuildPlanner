@@ -75,7 +75,35 @@
                         </ItemsControl>
                     </Expander>
                     <Expander Header="Resources">
-                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
+                        <ItemsControl x:Name="ResourceNodes">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <ItemsControl ItemsSource="{Binding}" Style="{StaticResource ItemsControlSixWide}"/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                            <!--<Button Style="{StaticResource TerranButton}">
+                                <Grid>
+                                    <Image Source="{StaticResource icon-mineral-nobg}"/>
+                                    <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
+                                        <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">1500</TextBlock>
+                                    </Border>
+                                </Grid>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Grid>
+                                    <Image Source="{StaticResource icon-mineral-nobg}"/>
+                                    <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
+                                        <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">900</TextBlock>
+                                    </Border>
+                                </Grid>
+                            </Button>-->
+                        </ItemsControl>
+                        <!--<ItemsControl Style="{StaticResource ItemsControlSixWide}">
                             <Button Style="{StaticResource TerranButton}">
                                 <Grid>
                                     <Image Source="{StaticResource icon-mineral-nobg}"/>
@@ -107,7 +135,7 @@
                             <Button Style="{StaticResource TerranButton}">
                                 <Image Source="{StaticResource btn-unit-terran-scv}"/>
                             </Button>
-                        </ItemsControl>
+                        </ItemsControl>-->
                     </Expander>
                 </StackPanel>
             </TabItem>
@@ -149,7 +177,7 @@
                         </ItemsControl>
                     </Expander>
                     <Expander Header="Units">
-                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
+                        <ItemsControl x:Name="Units" Style="{StaticResource ItemsControlSixWide}">
 
                         </ItemsControl>
                     </Expander>
