@@ -35,6 +35,29 @@
                         </Setter.Value>
                     </Setter>
                 </Style>
+                <Style x:Key="ItemsControlThreeWide" TargetType="ItemsControl">
+                    <Setter Property="ItemsPanel">
+                        <Setter.Value>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="3" />
+                            </ItemsPanelTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="ItemTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Style="{StaticResource TerranButton}">
+                                        <Image Source="{Binding Path=Structure}"/>
+                                    </Button>
+                                    <Button Style="{StaticResource TerranButton}">
+                                        <Image Source="{Binding Path=Addon}"/>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
             </TabControl.Resources>
             <TabItem Header="Base 1">
                 <StackPanel>
@@ -131,11 +154,23 @@
                                     </Image.OpacityMask>
                                 </Image>
                             </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource BarracksImage}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource TechLabImage}"/>
+                            </Button>
+                            <Button Style="{StaticResource TerranButton}">
+                                <Image Source="{StaticResource ReactorImage}"/>
+                            </Button>
                         </ItemsControl>
                     </Expander>
                     <Expander Header="Structures with Add-Ons">
-                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
-                            
+                        <ItemsControl Style="{StaticResource ItemsControlThreeWide}">
+                            <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource TechLabImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource ReactorImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource TechLabImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource ReactorImage}"/>
                         </ItemsControl>
                     </Expander>
                     <Expander Header="Units">

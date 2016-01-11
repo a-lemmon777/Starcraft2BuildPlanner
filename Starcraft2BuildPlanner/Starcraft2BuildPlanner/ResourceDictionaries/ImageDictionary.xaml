@@ -7,6 +7,9 @@
     <!-- Buildings -->
     <BitmapImage x:Key="CommandCenterImage" UriSource="/Images/btn-building-terran-commandcenter.png"/>
     <BitmapImage x:Key="RefineryImage" UriSource="/Images/btn-building-terran-refinery.png"/>
+    <BitmapImage x:Key="BarracksImage" UriSource="/Images/btn-building-terran-barracks.png"/>
+    <BitmapImage x:Key="TechLabImage" UriSource="/Images/btn-building-terran-techlab.png"/>
+    <BitmapImage x:Key="ReactorImage" UriSource="/Images/btn-building-terran-reactor.png"/>
     <BitmapImage x:Key="OrbitalCommandImage" UriSource="/Images/btn-building-terran-surveillancestation.png"/>
     
     <!-- Resource Nodes -->

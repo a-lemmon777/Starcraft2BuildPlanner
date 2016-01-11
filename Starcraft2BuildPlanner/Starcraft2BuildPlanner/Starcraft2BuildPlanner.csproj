@@ -70,6 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StructureAndAddon.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -178,6 +179,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\icon-highyieldmineral-nobg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-building-terran-barracks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-building-terran-reactor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\btn-building-terran-techlab.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
