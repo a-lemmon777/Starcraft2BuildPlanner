@@ -46,14 +46,18 @@
                     <Setter Property="ItemTemplate">
                         <Setter.Value>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Button Style="{StaticResource TerranButton}">
-                                        <Image Source="{Binding Path=Structure}"/>
-                                    </Button>
-                                    <Button Style="{StaticResource TerranButton}">
-                                        <Image Source="{Binding Path=Addon}"/>
-                                    </Button>
-                                </StackPanel>
+                                <Grid>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button Style="{StaticResource TerranButton}">
+                                            <Image Source="{Binding Path=Structure}"/>
+                                        </Button>
+                                        <Button Style="{StaticResource TerranButton}">
+                                            <Image Source="{Binding Path=Addon}"/>
+                                        </Button>
+                                    </StackPanel>
+                                    <Rectangle Style="{StaticResource AddonConnector}" VerticalAlignment="Top"/>
+                                    <Rectangle Style="{StaticResource AddonConnector}" VerticalAlignment="Bottom"/>
+                                </Grid>
                             </DataTemplate>
                         </Setter.Value>
                     </Setter>
@@ -169,8 +173,10 @@
                         <ItemsControl Style="{StaticResource ItemsControlThreeWide}">
                             <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource TechLabImage}"/>
                             <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource ReactorImage}"/>
-                            <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource TechLabImage}"/>
-                            <local:StructureAndAddon Structure="{StaticResource BarracksImage}" Addon="{StaticResource ReactorImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource FactoryImage}" Addon="{StaticResource TechLabImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource FactoryImage}" Addon="{StaticResource ReactorImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource StarportImage}" Addon="{StaticResource TechLabImage}"/>
+                            <local:StructureAndAddon Structure="{StaticResource StarportImage}" Addon="{StaticResource ReactorImage}"/>
                         </ItemsControl>
                     </Expander>
                     <Expander Header="Units">

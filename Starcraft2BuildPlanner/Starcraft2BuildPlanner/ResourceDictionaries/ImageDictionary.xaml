@@ -11,6 +11,8 @@
     <BitmapImage x:Key="TechLabImage" UriSource="/Images/btn-building-terran-techlab.png"/>
     <BitmapImage x:Key="ReactorImage" UriSource="/Images/btn-building-terran-reactor.png"/>
     <BitmapImage x:Key="OrbitalCommandImage" UriSource="/Images/btn-building-terran-surveillancestation.png"/>
+    <BitmapImage x:Key="FactoryImage" UriSource="/Images/btn-building-terran-factory.png"/>
+    <BitmapImage x:Key="StarportImage" UriSource="/Images/btn-building-terran-starport.png"/>
     
     <!-- Resource Nodes -->
     <BitmapImage x:Key="MineralImage" UriSource="/Images/icon-mineral-nobg.png"/>
