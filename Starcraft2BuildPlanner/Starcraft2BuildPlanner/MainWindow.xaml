@@ -64,74 +64,157 @@
                 </Style>
             </TabControl.Resources>
             <TabItem Header="Base 1">
-                <StackPanel>
-                    <Expander Header="Command Structures">
-                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource CommandCenterImage}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}" IsEnabled="False">
-                                <Image Source="{StaticResource OrbitalCommandImage}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}" IsEnabled="False">
-                                <Image Source="{StaticResource convertedImage}">
-                                    <Image.OpacityMask>
-                                        <ImageBrush ImageSource="{StaticResource OrbitalCommandImage}"/>
-                                    </Image.OpacityMask>
-                                </Image>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Grid>
-                                    <Image Source="{StaticResource MineralImage}"/>
-                                    <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
-                                        <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">1500</TextBlock>
-                                    </Border>
-                                </Grid>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Grid>
-                                    <Image Source="{StaticResource MineralImage}"/>
-                                    <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
-                                        <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">900</TextBlock>
-                                    </Border>
-                                </Grid>
-                            </Button>
-                        </ItemsControl>
-                    </Expander>
-                    <Expander Header="Idle Workers">
-                        <ItemsControl Style="{StaticResource ItemsControlSixWide}">
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource SCVImage}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource SCVImage}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource SCVImage}"/>
-                            </Button>
-                            <Button Style="{StaticResource TerranButton}">
-                                <Image Source="{StaticResource MuleImage}"/>
-                            </Button>
-                        </ItemsControl>
-                    </Expander>
-                    <Expander Header="Resources">
-                        <ItemsControl x:Name="ResourceNodes">
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <StackPanel/>
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <ItemsControl ItemsSource="{Binding}" Style="{StaticResource ItemsControlSixWide}"/>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </Expander>
-                </StackPanel>
+                <ScrollViewer>
+                    <StackPanel>
+                        <Expander Header="Command Structures">
+                            <ItemsControl Style="{StaticResource ItemsControlSixWide}">
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource CommandCenterImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource InfantryWeaponsLevel1Image}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource OrbitalCommandImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}" IsEnabled="False">
+                                    <Image Source="{StaticResource convertedImage}">
+                                        <Image.OpacityMask>
+                                            <ImageBrush ImageSource="{StaticResource OrbitalCommandImage}"/>
+                                        </Image.OpacityMask>
+                                    </Image>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Grid>
+                                        <Image Source="{StaticResource MineralImage}"/>
+                                        <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
+                                            <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">1500</TextBlock>
+                                        </Border>
+                                    </Grid>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Grid>
+                                        <Image Source="{StaticResource MineralImage}"/>
+                                        <Border Background="#AA000000" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="3" Margin="3">
+                                            <TextBlock Foreground="White" LineHeight="13" LineStackingStrategy="BlockLineHeight">900</TextBlock>
+                                        </Border>
+                                    </Grid>
+                                </Button>
+                            </ItemsControl>
+                        </Expander>
+                        <Expander Header="Idle Workers">
+                            <ItemsControl Style="{StaticResource ItemsControlSixWide}">
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource SCVImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource SCVImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource SCVImage}"/>
+                                </Button>
+                                <Button Style="{StaticResource TerranButton}">
+                                    <Image Source="{StaticResource MuleImage}"/>
+                                </Button>
+                            </ItemsControl>
+                        </Expander>
+                        <Expander Header="Resources">
+                            <ItemsControl x:Name="ResourceNodes">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <ItemsControl ItemsSource="{Binding}" Style="{StaticResource ItemsControlSixWide}"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
             </TabItem>
             <TabItem Header="Base 2">
                 <StackPanel Width="288">
@@ -196,5 +279,27 @@
             </Hyperlink>
              | Disclaimer: all images in this program are property of Blizzard Entertainment, Inc.
         </TextBlock>
+        
+        <!-- Results Display -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="8"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Minerals and Vespene Chart -->
+            <Rectangle Grid.Row="0" Fill="Blue"/>
+            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="SlateGray"/>
+            
+            <!-- Supply Chart -->
+            <Rectangle Grid.Row="2" Fill="Red"/>
+            <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Background="SlateGray"/>
+            
+            <!-- Gantt Chart -->
+            <Rectangle Grid.Row="4" Fill="Green"/>
+        </Grid>
     </DockPanel>
 </Window>
