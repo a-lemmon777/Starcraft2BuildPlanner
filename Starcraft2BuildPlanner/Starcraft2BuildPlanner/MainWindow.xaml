@@ -62,6 +62,9 @@
                         </Setter.Value>
                     </Setter>
                 </Style>
+                <Style TargetType="ScrollViewer">
+                    <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+                </Style>
             </TabControl.Resources>
             <TabItem Header="Base 1">
                 <ScrollViewer>
@@ -279,27 +282,40 @@
             </Hyperlink>
              | Disclaimer: all images in this program are property of Blizzard Entertainment, Inc.
         </TextBlock>
-        
+
         <!-- Results Display -->
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="8"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="8"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            
-            <!-- Minerals and Vespene Chart -->
-            <Rectangle Grid.Row="0" Fill="Blue"/>
-            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="SlateGray"/>
-            
-            <!-- Supply Chart -->
-            <Rectangle Grid.Row="2" Fill="Red"/>
-            <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Background="SlateGray"/>
-            
-            <!-- Gantt Chart -->
-            <Rectangle Grid.Row="4" Fill="Green"/>
-        </Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <Canvas x:Name="ResultCanvas">
+                <Grid Width="{Binding ActualWidth, ElementName=ResultCanvas}" Height="{Binding ActualHeight, ElementName=ResultCanvas}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="7"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="7"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Minerals and Vespene Chart -->
+                    <Canvas Grid.Row="0" Background="Black">
+
+                    </Canvas>
+                    <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="SlateGray"/>
+
+                    <!-- Supply Chart -->
+                    <Rectangle Grid.Row="2" Fill="Red"/>
+                    <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Background="SlateGray"/>
+
+                    <!-- Time Line -->
+                    <Canvas Grid.Row="4" Background="Blue"/>
+                    <!--<Slider Grid.Row="4" Maximum="7199" SmallChange="1" TickFrequency="40" TickPlacement="BottomRight" Background="Black" AutoToolTipPlacement="BottomRight"></Slider>-->
+
+                    <!-- Gantt Chart -->
+                    <Rectangle Grid.Row="5" Fill="Green"/>
+                </Grid>
+                <!-- Current Time Selector-->
+                <Rectangle Width="2" Height="{Binding ActualHeight, ElementName=ResultCanvas}" Fill="DarkGreen" Canvas.Left="80"/>
+            </Canvas>
+        </ScrollViewer>
     </DockPanel>
 </Window>
