@@ -12,7 +12,6 @@
         WindowStartupLocation="CenterScreen"
         Icon="{StaticResource MainWindowIcon}">
     <Window.Resources>
-        <Brush x:Key="TextColor">BlueViolet</Brush>
         <local:TickTimeToPixelConverter x:Key="TickTimeToPixelConverter"/>
     </Window.Resources>
     <Window.Background>
@@ -23,49 +22,7 @@
         <!-- Unit and structure selection panel -->
         <TabControl DockPanel.Dock="Right" TabStripPlacement="Left" HorizontalAlignment="Right" Background="#CC000000">
             <TabControl.Resources>
-                <Style TargetType="Expander">
-                    <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
-                    <Setter Property="IsExpanded" Value="True"/>
-                </Style>
-                <Style x:Key="ItemsControlSixWide" TargetType="ItemsControl">
-                    <Setter Property="ItemsPanel">
-                        <Setter.Value>
-                            <ItemsPanelTemplate>
-                                <UniformGrid Columns="6" />
-                            </ItemsPanelTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-                <Style x:Key="ItemsControlThreeWide" TargetType="ItemsControl">
-                    <Setter Property="ItemsPanel">
-                        <Setter.Value>
-                            <ItemsPanelTemplate>
-                                <UniformGrid Columns="3" />
-                            </ItemsPanelTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="ItemTemplate">
-                        <Setter.Value>
-                            <DataTemplate>
-                                <Grid>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Button Style="{StaticResource TerranButton}">
-                                            <Image Source="{Binding Path=Structure}"/>
-                                        </Button>
-                                        <Button Style="{StaticResource TerranButton}">
-                                            <Image Source="{Binding Path=Addon}"/>
-                                        </Button>
-                                    </StackPanel>
-                                    <Rectangle Style="{StaticResource AddonConnector}" VerticalAlignment="Top"/>
-                                    <Rectangle Style="{StaticResource AddonConnector}" VerticalAlignment="Bottom"/>
-                                </Grid>
-                            </DataTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-                <Style TargetType="ScrollViewer">
-                    <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
-                </Style>
+                <Style TargetType="ScrollViewer" BasedOn="{StaticResource SelectionPanelScrollViewer}"/>
             </TabControl.Resources>
             <TabItem Header="Base 1">
                 <ScrollViewer>
@@ -286,7 +243,7 @@
 
         <!-- Results Display -->
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
-            <Canvas x:Name="ResultCanvas">
+            <Canvas x:Name="ResultCanvas" Width="9600">
                 <Grid Width="{Binding ActualWidth, ElementName=ResultCanvas}" Height="{Binding ActualHeight, ElementName=ResultCanvas}">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="80"/>
@@ -308,15 +265,11 @@
                     <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Background="SlateGray"/>
 
                     <!-- Time Line -->
-                    <StackPanel Grid.Row="4" Background="Black" Orientation="Horizontal">
-                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">00:00</Label>
-                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">00:20</Label>
-                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">00:40</Label>
-                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">01:00</Label>
-                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">01:20</Label>
-                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">01:40</Label>
+                    <StackPanel x:Name="TimeLine" Grid.Row="4" Background="Black" Orientation="Horizontal">
+                        <StackPanel.Resources>
+                            <Style TargetType="Label" BasedOn="{StaticResource TimeLineLabel}"/>
+                        </StackPanel.Resources>
                     </StackPanel>
-                    <!--<Slider Grid.Row="4" Maximum="7199" SmallChange="1" TickFrequency="40" TickPlacement="BottomRight" Background="Black" AutoToolTipPlacement="BottomRight"></Slider>-->
 
                     <!-- Gantt Chart -->
                     <Rectangle Grid.Row="5" Fill="Green"/>

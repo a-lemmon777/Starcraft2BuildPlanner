@@ -14,6 +14,12 @@ namespace Starcraft2BuildPlanner
         public MainWindow()
         {
             InitializeComponent();
+            // Creating the time line
+            for (int seconds = 0; seconds < 1200; seconds += 20) // 1200 seconds at 20 second intervals
+            {
+                string labelContent = System.TimeSpan.FromSeconds(seconds).ToString(@"mm\:ss");
+                TimeLine.Children.Add(new Label() { Content = labelContent});
+            }
             List<Button> units = new List<Button>();
             units.Add(new Button() { Style = Application.Current.FindResource("TerranButton") as Style });
             Units.ItemsSource = units;
