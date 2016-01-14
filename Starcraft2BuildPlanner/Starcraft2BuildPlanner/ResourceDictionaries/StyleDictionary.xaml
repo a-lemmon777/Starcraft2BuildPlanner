@@ -123,4 +123,16 @@
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
 
+    <!-- Mineral and Gas Chart-->
+    <!--<Style x:Key="MineralAndGasChart" TargetType="Canvas">
+        <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" ScaleX="1"/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+    </Style>-->
+
 </ResourceDictionary>
