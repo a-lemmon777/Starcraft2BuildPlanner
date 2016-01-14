@@ -54,5 +54,21 @@ namespace Starcraft2BuildPlanner
         {
             System.Diagnostics.Process.Start(e.Uri.AbsoluteUri);
         }
+
+        private void TimeBar_DragDelta(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
+        {
+            double newPosition = Canvas.GetLeft(TimeBar) + e.HorizontalChange;
+            if (newPosition < 0) // Keeps the TimeBar on the page
+            {
+                newPosition = 0;
+            }
+            Canvas.SetLeft(TimeBar, newPosition);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            uint currentTime = ((App)Application.Current).CurrentTimeInTicks;
+            MessageBox.Show(currentTime.ToString());
+        }
     }
 }

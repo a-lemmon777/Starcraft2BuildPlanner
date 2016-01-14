@@ -72,7 +72,7 @@
                     <StackPanel>
                         <Expander Header="Command Structures">
                             <ItemsControl Style="{StaticResource ItemsControlSixWide}">
-                                <Button Style="{StaticResource TerranButton}">
+                                <Button Style="{StaticResource TerranButton}" Click="Button_Click">
                                     <Image Source="{StaticResource CommandCenterImage}"/>
                                 </Button>
                                 <Button Style="{StaticResource TerranButton}">
@@ -314,11 +314,25 @@
                     <!-- Gantt Chart -->
                     <Rectangle Grid.Row="5" Fill="Green"/>
                 </Grid>
+                
                 <!-- Current Time Selector-->
-                <Rectangle Width="2"
-                           Height="{Binding ActualHeight, ElementName=ResultCanvas}"
-                           Fill="DarkGreen"
-                           Canvas.Left="{Binding Path=CurrentTimeInTicks, Source={x:Static Application.Current}, Converter={StaticResource TickTimeToPixelConverter}}"/>
+                <Thumb x:Name="TimeBar"
+                       Canvas.Left="{Binding Path=CurrentTimeInTicks, Source={x:Static Application.Current}, Converter={StaticResource TickTimeToPixelConverter}, Mode=TwoWay}"
+                       DragDelta="TimeBar_DragDelta">
+                    <Thumb.Template>
+                        <ControlTemplate>
+                            
+                            <!-- Thin line -->
+                            <Canvas Width="2"
+                                    Background="DarkGreen"
+                                    Height="{Binding ActualHeight, ElementName=ResultCanvas}">
+                                
+                                <!-- Wide invisible area for easier dragging -->
+                                <Rectangle Width="14" Height="{Binding ActualHeight, ElementName=ResultCanvas}" Canvas.Left="-7" Fill="#00000000" Cursor="SizeWE"/>
+                            </Canvas>
+                        </ControlTemplate>
+                    </Thumb.Template>
+                </Thumb>
             </Canvas>
         </ScrollViewer>
     </DockPanel>

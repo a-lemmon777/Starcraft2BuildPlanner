@@ -9,12 +9,12 @@ namespace Starcraft2BuildPlanner
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return (int)value * 2;
+            return (uint)value * 2;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return (int)value / 2;
+            return System.Convert.ToUInt32(value) / 2;
         }
     }
 }
