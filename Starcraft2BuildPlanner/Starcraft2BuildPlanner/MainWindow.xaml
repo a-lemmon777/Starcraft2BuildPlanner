@@ -308,7 +308,14 @@
                     <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Background="SlateGray"/>
 
                     <!-- Time Line -->
-                    <Canvas Grid.Row="4" Background="Blue"/>
+                    <StackPanel Grid.Row="4" Background="Black" Orientation="Horizontal">
+                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">00:00</Label>
+                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">00:20</Label>
+                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">00:40</Label>
+                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">01:00</Label>
+                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">01:20</Label>
+                        <Label Width="80" BorderBrush="White" BorderThickness="1,0,0,0" Foreground="{StaticResource TextColor}" VerticalAlignment="Center">01:40</Label>
+                    </StackPanel>
                     <!--<Slider Grid.Row="4" Maximum="7199" SmallChange="1" TickFrequency="40" TickPlacement="BottomRight" Background="Black" AutoToolTipPlacement="BottomRight"></Slider>-->
 
                     <!-- Gantt Chart -->
