@@ -13,5 +13,6 @@ namespace Starcraft2BuildPlanner
     /// </summary>
     public partial class App : Application
     {
+        public int CurrentTimeInTicks { get; set; } = 0; // Using a tick value of 0.5 seconds
     }
 }

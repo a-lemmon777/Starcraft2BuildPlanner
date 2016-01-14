@@ -13,6 +13,7 @@
         Icon="{StaticResource MainWindowIcon}">
     <Window.Resources>
         <Brush x:Key="TextColor">BlueViolet</Brush>
+        <local:TickTimeToPixelConverter x:Key="TickTimeToPixelConverter"/>
     </Window.Resources>
     <Window.Background>
         <ImageBrush ImageSource="/Images/ui_battlenet_glues_topnav_hexpattern.png" TileMode="Tile" ViewportUnits="Absolute" Viewport="0,0,26,30"/>
@@ -314,7 +315,10 @@
                     <Rectangle Grid.Row="5" Fill="Green"/>
                 </Grid>
                 <!-- Current Time Selector-->
-                <Rectangle Width="2" Height="{Binding ActualHeight, ElementName=ResultCanvas}" Fill="DarkGreen" Canvas.Left="80"/>
+                <Rectangle Width="2"
+                           Height="{Binding ActualHeight, ElementName=ResultCanvas}"
+                           Fill="DarkGreen"
+                           Canvas.Left="{Binding Path=CurrentTimeInTicks, Source={x:Static Application.Current}, Converter={StaticResource TickTimeToPixelConverter}}"/>
             </Canvas>
         </ScrollViewer>
     </DockPanel>
